@@ -54,5 +54,6 @@ class Level1: CCNode, CCPhysicsCollisionDelegate {
     override func update(delta: CCTime) {
         let velocityX = clampf(Float(character.physicsBody.velocity.x), -Float(CGFloat.max), 100)
         character.physicsBody.velocity = ccp(CGFloat(velocityX), 0)
+        
     }
 }
