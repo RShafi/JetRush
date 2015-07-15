@@ -79,10 +79,7 @@
 			<true/>
 		</dict>
 		<key>Sci-Fi Tiles Pack</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-		</dict>
+		<dict/>
 		<key>Sprites</key>
 		<dict/>
 		<key>ccbResources</key>

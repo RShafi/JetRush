@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class Level1: CCNode, CCPhysicsCollisionDelegate {
     
     weak var winTile: CCSprite!
@@ -29,12 +30,29 @@ class Level1: CCNode, CCPhysicsCollisionDelegate {
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
-        if (gameOver == false) {
-            character.physicsBody.applyImpulse(ccp(50, 0))
-            sinceTouch = 0
+    var xTouch = touch.locationInWorld().x
+    var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
+        if xTouch < screenHalf {
+            left()
+        }
+        else {
+            right()
         }
     }
+    func tap() {
+        self.animationManager.runAnimationsForSequenceNamed("Tap")
+    }
     
-
-   
+    func right() {
+        character.physicsBody.applyImpulse(ccp(100, 0))
+    }
+    
+    func left() {
+        character.physicsBody.applyImpulse(ccp(-100, 0))
+    }
+    
+    override func update(delta: CCTime) {
+        let velocityX = clampf(Float(character.physicsBody.velocity.x), -Float(CGFloat.max), 100)
+        character.physicsBody.velocity = ccp(CGFloat(velocityX), 0)
+    }
 }
