@@ -40,11 +40,11 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string></string>
+		<string>Character</string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
-		<string>character</string>
+		<string></string>
 		<key>memberVarAssignmentType</key>
 		<integer>1</integer>
 		<key>physicsBody</key>
@@ -60,7 +60,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string></string>
+			<string>character</string>
 			<key>cornerRadius</key>
 			<real>0.0</real>
 			<key>density</key>
@@ -82,50 +82,40 @@
 					<real>65</real>
 				</array>
 				<array>
-					<real>64</real>
-					<real>65</real>
+					<real>73.5546875</real>
+					<real>65.039077758789062</real>
 				</array>
 				<array>
-					<real>59.99609375</real>
-					<real>34.503921508789062</real>
+					<real>77.13671875</real>
+					<real>28.320327758789062</real>
 				</array>
 				<array>
-					<real>64</real>
-					<real>0.0</real>
+					<real>75.87109375</real>
+					<real>1.3398590087890625</real>
 				</array>
 			</array>
 			<key>polygons</key>
 			<array>
 				<array>
 					<array>
-						<real>59.99609375</real>
-						<real>34.503921508789062</real>
+						<real>75.87109375</real>
+						<real>1.3398590087890625</real>
 					</array>
 					<array>
-						<real>64</real>
+						<real>77.13671875</real>
+						<real>28.320327758789062</real>
+					</array>
+					<array>
+						<real>73.5546875</real>
+						<real>65.039077758789062</real>
+					</array>
+					<array>
+						<real>0.0</real>
 						<real>65</real>
 					</array>
 					<array>
 						<real>0.0</real>
-						<real>65</real>
-					</array>
-				</array>
-				<array>
-					<array>
 						<real>0.0</real>
-						<real>65</real>
-					</array>
-					<array>
-						<real>0.0</real>
-						<real>0.0</real>
-					</array>
-					<array>
-						<real>64</real>
-						<real>0.0</real>
-					</array>
-					<array>
-						<real>59.99609375</real>
-						<real>34.503921508789062</real>
 					</array>
 				</array>
 			</array>
@@ -222,8 +212,6 @@
 				<array/>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

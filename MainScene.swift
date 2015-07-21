@@ -10,7 +10,7 @@ import Foundation
 
 class MainScene: CCNode {
     func play() {
-        let gameplayScene = CCBReader.loadAsScene("Level1")
+        let gameplayScene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplayScene)
     }
    

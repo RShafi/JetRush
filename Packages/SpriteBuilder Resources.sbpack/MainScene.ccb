@@ -894,7 +894,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Start</string>
+							<string>Launch</string>
 							<false/>
 						</array>
 					</dict>
