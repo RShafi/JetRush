@@ -11,7 +11,9 @@ import Foundation
 class MainScene: CCNode {
     func play() {
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
-        CCDirector.sharedDirector().presentScene(gameplayScene)
+      //  CCDirector.sharedDirector().presentScene(gameplayScene)
+        var transition = CCTransition(fadeWithDuration: 0.3)
+        CCDirector.sharedDirector().presentScene(gameplayScene, withTransition: transition)
     }
    
 }
