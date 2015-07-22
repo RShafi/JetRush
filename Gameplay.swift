@@ -35,7 +35,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         walls.append(wallOne)
         walls.append(wallTwo)
         var rect = CGRectUnion(wallOne.boundingBox(), bottom.boundingBox())
-        let follow = CCActionFollow(target: character, worldBoundary: boundingBox())
+        let follow = CCActionFollow(target: character, worldBoundary: rect)
         followNode.runAction(follow)
         for i in 0...2 {
             spawnNewObstacle()
@@ -73,8 +73,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         let velocityX = clampf(Float(character.physicsBody.velocity.x), -100, 100)
         character.physicsBody.velocity = ccp(CGFloat(velocityX), 0)
         sinceTouch += delta
-       // character.position = ccp(character.position.x , character.position.y + scrollSpeed * CGFloat(delta))
-      //  gamePhysicsNode.position = ccp(gamePhysicsNode.position.x , gamePhysicsNode.position.y - scrollSpeed * CGFloat(delta))
+      //  character.position = ccp(character.position.x , character.position.y + scrollSpeed * CGFloat(delta))
+       // gamePhysicsNode.position = ccp(gamePhysicsNode.position.x , gamePhysicsNode.position.y - scrollSpeed * CGFloat(delta))
         for wall in walls {
             let wallWorldPosition = gamePhysicsNode.convertToWorldSpace(wall.position)
             let wallScreenPosition = convertToNodeSpace(wallWorldPosition)
