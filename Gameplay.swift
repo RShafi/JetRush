@@ -14,6 +14,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     
     weak var character: CCSprite!
     weak var restartButton: CCButton!
+    weak var pauseButton: CCButton!
     weak var gamePhysicsNode : CCPhysicsNode!
     weak var ground: CCSprite!
     weak var gameOver1: CCLabelTTF!
@@ -98,6 +99,10 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplayScene)
     }
+    func pauseGame() {
+        let pauseScene = CCBReader.loadAsScene("Pause")
+        CCDirector.sharedDirector().presentScene(pauseScene)
+    }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
         var xTouch = touch.locationInWorld().x
@@ -128,16 +133,16 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         
         let velocityX = clampf(Float(character.physicsBody.velocity.x), -100, 100)
         character.physicsBody.velocity = ccp(CGFloat(velocityX), 0)
- //       sinceTouch += delta
+        sinceTouch += delta
 
-//        if gameOver == false {
-//            if let accelerometerData: CMAccelerometerData = motion.accelerometerData {
-//                let acceleration: CMAcceleration = accelerometerData.acceleration
-//                let accelFloat: CGFloat = CGFloat(acceleration.y)
-//                var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 400.0 * CGFloat(delta)
-//                character.physicsBody.velocity.x = newXPos
-//            }
-//        }
+        if gameOver == false {
+            if let accelerometerData: CMAccelerometerData = motion.accelerometerData {
+                let acceleration: CMAcceleration = accelerometerData.acceleration
+                let accelFloat: CGFloat = CGFloat(acceleration.y)
+                var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 400.0 * CGFloat(delta)
+                character.physicsBody.velocity.x = newXPos
+            }
+        }
       //  character.position = ccp(character.position.x , character.position.y + scrollSpeed * CGFloat(delta))
        // gamePhysicsNode.position = ccp(gamePhysicsNode.position.x , gamePhysicsNode.position.y - scrollSpeed * CGFloat(delta))
        obstaclesLayer.position = ccp(obstaclesLayer.position.x, obstaclesLayer.position.y - scrollSpeed * CGFloat(delta))
@@ -221,6 +226,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         let scene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(scene)
     }
+    
+    
 
 //   
 //    func spawnNewObstacle() {
