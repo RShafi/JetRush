@@ -36,14 +36,14 @@
     // Configure CCFileUtils to work with SpriteBuilder
     [CCBReader configureCCFileUtils];
     
-    [[CCPackageManager sharedManager] loadPackages];
+    [[CCPackagemotion sharedmotion] loadPackages];
 
     [director runWithScene:[CCBReader loadAsScene:@"MainScene"]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification
 {
-    [[CCPackageManager sharedManager] savePackages];
+    [[CCPackagemotion sharedmotion] savePackages];
 }
 
 @end

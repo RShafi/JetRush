@@ -10,6 +10,8 @@
 		0F153B691B55AA4B00384F35 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F153B681B55AA4B00384F35 /* Character.swift */; };
 		0F153B6F1B55AA6300384F35 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F153B6E1B55AA6300384F35 /* Gameplay.swift */; };
 		0F153B771B55AF8000384F35 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F153B761B55AF8000384F35 /* MainScene.swift */; };
+		0F4BA6731B62AE79006C6A51 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */; };
+		0FBE0A571B616F5600189001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBE0A561B616F5600189001 /* CoreMotion.framework */; };
 		0FC55AC21B581D6800517425 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC55AC11B581D6800517425 /* Obstacle.swift */; };
 		5B121030197484FA004C1E1D /* JetRushActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* JetRushActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
@@ -153,6 +155,8 @@
 		0F153B681B55AA4B00384F35 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		0F153B6E1B55AA6300384F35 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		0F153B761B55AF8000384F35 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		0FBE0A561B616F5600189001 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		0FC55AC11B581D6800517425 /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -259,6 +263,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4BA6731B62AE79006C6A51 /* CoreAudio.framework in Frameworks */,
+				0FBE0A571B616F5600189001 /* CoreMotion.framework in Frameworks */,
 				7A97911819E631CD001FFC4D /* libcocos2d.a in Frameworks */,
 				8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */,
 				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
@@ -495,6 +501,8 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */,
+				0FBE0A561B616F5600189001 /* CoreMotion.framework */,
 				BC5399D31A44DCC90063F482 /* AndroidKit.framework */,
 				BC5399D41A44DCC90063F482 /* CoreJava.framework */,
 				BC5399D51A44DCC90063F482 /* GLActivityKit.framework */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreMotion
 
 
 class Gameplay: CCNode, CCPhysicsCollisionDelegate {
@@ -21,16 +22,37 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var wallTwo: CCSprite!
     weak var obstacle1: CCSprite!
     weak var obstacle2: CCSprite!
+    weak var obstacle3: CCSprite!
+    weak var obstacle4: CCSprite!
+    weak var obstacle5: CCSprite!
+    weak var obstacle6: CCSprite!
+    weak var obstacle7: CCSprite!
+    weak var obstacle8: CCSprite!
     weak var bottom: CCSprite!
+    weak var scoreLabel: CCLabelTTF!
+    weak var obstaclesLayer : CCNode!
+    weak var followNode: CCNode!
     var scrollSpeed : CGFloat = 60
     var sinceTouch: CCTime = 0
     var gameOver = false
-    weak var obstaclesLayer : CCNode!
-    let firstObstaclePosition : CGFloat = 280
-    let distanceBetweenObstacles : CGFloat = 160
+    var motion: CMMotionManager! = CMMotionManager()
     var obstacles : [CCNode] = []
     var walls = [CCSprite]()
-    weak var followNode: CCNode!
+    let firstObstaclePosition : CGFloat = 280
+    let distanceBetweenObstacles : CGFloat = 160
+    let randomNumber = arc4random_uniform(350)
+    var score : Int = 0 {
+        didSet {
+            scoreLabel.string = "\(score)"
+            gameOver2.string = "\(score)"
+        }
+    }
+//    var gameOverScore : Int = 0 {
+//        didSet {
+//            gameOver2.string = "\(gameOverScore)"
+//        }
+//    }
+    
 
     
     func didLoadFromCCB() {
@@ -39,6 +61,12 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         character.physicsBody.collisionType = "character"
         obstacles.append(obstacle1)
         obstacles.append(obstacle2)
+        obstacles.append(obstacle3)
+        obstacles.append(obstacle4)
+        obstacles.append(obstacle5)
+        obstacles.append(obstacle6)
+        obstacles.append(obstacle7)
+        obstacles.append(obstacle8)
         walls.append(wallOne)
         walls.append(wallTwo)
      //   var rect = CGRectUnion(wallOne.boundingBox(), bottom.boundingBox())
@@ -47,6 +75,23 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
 //        for i in 0...2 {
 //            spawnNewObstacle()
 //        }
+  
+//        motion.accelerometerUpdateInterval = 0.2
+//        motion.gyroUpdateInterval = 0.2
+//        motion.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue(), withHandler: { (accelerometerData: CMAccelerometerData!, error: NSError!) -> Void in
+//            self.outputAccelerationData(accelerometerData.acceleration)
+//            if error != nil {
+//                println("\(error)")
+//            }
+//        })
+//        
+//        
+//        motion.startGyroUpdatesToQueue(NSOperationQueue.currentQueue(), withHandler: { (gyroData: CMGyroData!, error: NSError!) -> Void in
+//            self.outputRotationData(gyroData.rotationRate)
+//            if error != nil {
+//                println("\(error)")
+//            }
+//        })
     }
     
     func retry() {
@@ -57,11 +102,13 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
         var xTouch = touch.locationInWorld().x
         var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
-        if xTouch < screenHalf {
-            left()
-        }
-        else {
-            right()
+        if gameOver == false {
+            if xTouch < screenHalf {
+                left()
+            }
+            else {
+                right()
+            }
         }
     }
     func tap() {
@@ -70,7 +117,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     
     func right() {
         character.physicsBody.applyImpulse(ccp(100, 0))
-        character.physicsBody.applyImpulse(ccp(-50,0))
+
     }
 
     func left() {
@@ -78,9 +125,19 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     }
   
     override func update(delta: CCTime) {
+        
         let velocityX = clampf(Float(character.physicsBody.velocity.x), -100, 100)
         character.physicsBody.velocity = ccp(CGFloat(velocityX), 0)
         sinceTouch += delta
+
+//        if gameOver == false {
+//            if let accelerometerData: CMAccelerometerData = motion.accelerometerData {
+//                let acceleration: CMAcceleration = accelerometerData.acceleration
+//                let accelFloat: CGFloat = CGFloat(acceleration.y)
+//                var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 400.0 * CGFloat(delta)
+//                character.physicsBody.velocity.x = newXPos
+//            }
+//        }
       //  character.position = ccp(character.position.x , character.position.y + scrollSpeed * CGFloat(delta))
        // gamePhysicsNode.position = ccp(gamePhysicsNode.position.x , gamePhysicsNode.position.y - scrollSpeed * CGFloat(delta))
        obstaclesLayer.position = ccp(obstaclesLayer.position.x, obstaclesLayer.position.y - scrollSpeed * CGFloat(delta))
@@ -126,14 +183,14 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
 //                obstacles.removeAtIndex(find(obstacles, obstacle)!)
             
                 // for each removed obstacle, add a new one
-            obstacle.physicsBody.collisionType = "level"
         
             var worldPosition = obstaclesLayer.convertToWorldSpace(obstacle.position)
             
              if worldPosition.y < 0.0 {
                 println("The position is negative")
                 obstacle.position = ccp(obstacle.position.x, obstacle.position.y + 700)
-                scrollSpeed+2
+                scrollSpeed + 2
+                score++
             }
         }
     
@@ -150,12 +207,14 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             restartButton.visible = true
             gameOver1.visible = true
             gameOver2.visible = true
+            scoreLabel.visible = false
             scrollSpeed = 0
             let move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.2, position: ccp(0, 4)))
             let moveBack = CCActionEaseBounceOut(action: move.reverse())
             let shakeSequence = CCActionSequence(array: [move, moveBack])
             runAction(shakeSequence)
         }
+
     }
     
     func restart() {
@@ -163,19 +222,18 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         CCDirector.sharedDirector().presentScene(scene)
     }
 
-//    
+//   
 //    func spawnNewObstacle() {
 //        var prevObstaclePos = firstObstaclePosition
 //        if obstacles.count > 0 {
 //            prevObstaclePos = obstacles.last!.position.x
 //        }
-//        
-//        // create and add a new obstacle
-//        let obstacle = CCBReader.load("Obstacle") as! Obstacle
-//        obstacle.position = ccp(prevObstaclePos + distanceBetweenObstacles, 100)
-//        obstacle.setupRandomPosition()
-//        obstaclesLayer.addChild(obstacle)
-//        obstacles.append(obstacle)
-//    }
+//      // create and add a new obstacle
+//        let blockage = CCBReader.load("Obstacle") as! Obstacle
+//       blockage.position = ccp(prevObstaclePos + distanceBetweenObstacles, 100)
+//        blockage.setupRandomPosition()
+//       obstaclesLayer.addChild(blockage)
+//       obstacles.append(blockage)
+//   }
     
 }
