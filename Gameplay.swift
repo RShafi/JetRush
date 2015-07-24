@@ -128,7 +128,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         
         let velocityX = clampf(Float(character.physicsBody.velocity.x), -100, 100)
         character.physicsBody.velocity = ccp(CGFloat(velocityX), 0)
-        sinceTouch += delta
+ //       sinceTouch += delta
 
 //        if gameOver == false {
 //            if let accelerometerData: CMAccelerometerData = motion.accelerometerData {
