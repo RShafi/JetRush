@@ -102,6 +102,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     func pauseGame() {
         let pauseScene = CCBReader.loadAsScene("Pause")
         CCDirector.sharedDirector().presentScene(pauseScene)
+        CCDirector.sharedDirector().pause()
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
@@ -116,9 +117,11 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             }
         }
     }
-    func tap() {
-        self.animationManager.runAnimationsForSequenceNamed("Tap")
-    }
+//    func tap() {
+//        self.animationManager.runAnimationsForSequenceNamed("Tap")
+//    }
+    
+    
     
     func right() {
         character.physicsBody.applyImpulse(ccp(100, 0))
@@ -141,6 +144,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
                 let accelFloat: CGFloat = CGFloat(acceleration.y)
                 var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 400.0 * CGFloat(delta)
                 character.physicsBody.velocity.x = newXPos
+                
             }
         }
       //  character.position = ccp(character.position.x , character.position.y + scrollSpeed * CGFloat(delta))
@@ -213,6 +217,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             gameOver1.visible = true
             gameOver2.visible = true
             scoreLabel.visible = false
+            pauseButton.visible = false
+            character.physicsBody.velocity.x = 0
             scrollSpeed = 0
             let move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.2, position: ccp(0, 4)))
             let moveBack = CCActionEaseBounceOut(action: move.reverse())

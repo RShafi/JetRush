@@ -12,14 +12,17 @@ class Pause: CCNode {
    
     weak var resumeButton: CCButton!
     weak var quitButton: CCButton!
-    
+    var transition = CCTransition(fadeWithDuration: 0.3)
+   
     func quit() {
         let quitScene = CCBReader.loadAsScene("MainScene")
-        CCDirector.sharedDirector().presentScene(quitScene)
+        CCDirector.sharedDirector().presentScene(quitScene, withTransition: transition)
+        CCDirector.sharedDirector().resume()
     }
     
     func resumeGame() {
-        let gameplayScene = CCBReader.loadAsScene("GamePlay")
+        let gameplayScene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplayScene)
+        CCDirector.sharedDirector().resume()
     }
 }

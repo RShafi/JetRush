@@ -2099,8 +2099,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>297.64288330078125</real>
-											<real>817.092529296875</real>
+											<real>267.9844970703125</real>
+											<real>845.77301025390625</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -2128,6 +2128,8 @@
 										<string>Obstacle.ccb</string>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -3666,8 +3668,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -3828,7 +3828,7 @@
 		</dict>
 	</array>
 	<key>stageBorder</key>
-	<integer>0</integer>
+	<integer>3</integer>
 	<key>stageColor</key>
 	<integer>0</integer>
 </dict>

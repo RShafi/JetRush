@@ -13,6 +13,7 @@ class Obstacle: CCNode {
     let obstacleMaximumPositionx: CGFloat = 440
     let obstacleDistance: CGFloat = 142
     weak var obstacle: CCSprite!
+    
    
     
     func setupRandomPosition() {
