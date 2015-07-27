@@ -101,8 +101,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     }
     func pauseGame() {
         let pauseScene = CCBReader.loadAsScene("Pause")
-        CCDirector.sharedDirector().presentScene(pauseScene)
         CCDirector.sharedDirector().pause()
+        CCDirector.sharedDirector().presentScene(pauseScene)
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
@@ -147,9 +147,11 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
                 
             }
         }
+         obstaclesLayer.position = ccp(obstaclesLayer.position.x, obstaclesLayer.position.y - scrollSpeed * CGFloat(delta))
+        
       //  character.position = ccp(character.position.x , character.position.y + scrollSpeed * CGFloat(delta))
        // gamePhysicsNode.position = ccp(gamePhysicsNode.position.x , gamePhysicsNode.position.y - scrollSpeed * CGFloat(delta))
-       obstaclesLayer.position = ccp(obstaclesLayer.position.x, obstaclesLayer.position.y - scrollSpeed * CGFloat(delta))
+      
       //  var worldPosition = obstaclesLayer.convertToWorldSpace(obstacle1.position)
         
       //  if worldPosition.y < 0.0 {
@@ -198,7 +200,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
              if worldPosition.y < 0.0 {
                 println("The position is negative")
                 obstacle.position = ccp(obstacle.position.x, obstacle.position.y + 700)
-                scrollSpeed + 2
+                scrollSpeed = scrollSpeed + 2
                 score++
             }
         }
