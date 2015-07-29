@@ -22,7 +22,6 @@ class Pause: CCNode {
     
     func resumeGame() {
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
-        CCDirector.sharedDirector().presentScene(gameplayScene)
         CCDirector.sharedDirector().resume()
     }
 }

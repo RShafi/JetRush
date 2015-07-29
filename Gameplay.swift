@@ -15,10 +15,13 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var character: CCSprite!
     weak var restartButton: CCButton!
     weak var pauseButton: CCButton!
+    weak var quitButton2: CCButton!
     weak var gamePhysicsNode : CCPhysicsNode!
     weak var ground: CCSprite!
     weak var gameOver1: CCLabelTTF!
     weak var gameOver2: CCLabelTTF!
+    weak var highScore: CCLabelTTF!
+    weak var highscoreLabel : CCLabelTTF!
     weak var wallOne: CCSprite!
     weak var wallTwo: CCSprite!
     weak var obstacle1: CCSprite!
@@ -36,7 +39,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     var scrollSpeed : CGFloat = 60
     var sinceTouch: CCTime = 0
     var gameOver = false
-    var motion: CMMotionManager! = CMMotionManager()
+    let motion: CMMotionManager! = CMMotionManager()
     var obstacles : [CCNode] = []
     var walls = [CCSprite]()
     let firstObstaclePosition : CGFloat = 280
@@ -60,6 +63,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         gamePhysicsNode.collisionDelegate = self
         userInteractionEnabled = true
         character.physicsBody.collisionType = "character"
+        motion.startAccelerometerUpdates()
         obstacles.append(obstacle1)
         obstacles.append(obstacle2)
         obstacles.append(obstacle3)
@@ -70,6 +74,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         obstacles.append(obstacle8)
         walls.append(wallOne)
         walls.append(wallTwo)
+        NSUserDefaults.standardUserDefaults().addObserver(self, forKeyPath: "highscore", options: .allZeros, context: nil)
+        updateHighscore()
      //   var rect = CGRectUnion(wallOne.boundingBox(), bottom.boundingBox())
       //  let follow = CCActionFollow(target: character, worldBoundary: rect)
      //   followNode.runAction(follow)
@@ -105,33 +111,33 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         CCDirector.sharedDirector().presentScene(pauseScene)
     }
     
-    override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
-        var xTouch = touch.locationInWorld().x
-        var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
-        if gameOver == false {
-            if xTouch < screenHalf {
-                left()
-            }
-            else {
-                right()
-            }
-        }
-    }
+//    override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
+//        var xTouch = touch.locationInWorld().x
+//        var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
+//        if gameOver == false {
+//            if xTouch < screenHalf {
+//                left()
+//            }
+//            else {
+//                right()
+//            }
+//        }
+//    }
 //    func tap() {
 //        self.animationManager.runAnimationsForSequenceNamed("Tap")
 //    }
     
     
     
-    func right() {
-        character.physicsBody.applyImpulse(ccp(100, 0))
-
-    }
-
-    func left() {
-        character.physicsBody.applyImpulse(ccp(-100, 0))
-    }
-  
+//    func right() {
+//        character.physicsBody.applyImpulse(ccp(100, 0))
+//
+//    }
+//
+//    func left() {
+//        character.physicsBody.applyImpulse(ccp(-100, 0))
+//    }
+//  
     override func update(delta: CCTime) {
         
         let velocityX = clampf(Float(character.physicsBody.velocity.x), -100, 100)
@@ -141,7 +147,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         if gameOver == false {
             if let accelerometerData: CMAccelerometerData = motion.accelerometerData {
                 let acceleration: CMAcceleration = accelerometerData.acceleration
-                let accelFloat: CGFloat = CGFloat(acceleration.y)
+                let accelFloat: CGFloat = CGFloat(acceleration.x)
                 var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 400.0 * CGFloat(delta)
                 character.physicsBody.velocity.x = newXPos
                 
@@ -185,22 +191,25 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
 //        }
         
         for obstacle in obstacles.reverse() {
-//            let obstacleWorldPosition = gamePhysicsNode.convertToWorldSpace(obstacle.position)
+//            let obstacleWorldPosition = obstaclesLayer.convertToWorldSpace(obstacle.position)
 //            let obstacleScreenPosition = convertToNodeSpace(obstacleWorldPosition)
-            
+//            
 //            // obstacle moved past left side of screen?
-//            if obstacleScreenPosition.x < (-obstacle.contentSize.width) {
+//            if obstacleScreenPosition.y < (-obstacle.contentSize.width) {
 //                obstacle.removeFromParent()
 //                obstacles.removeAtIndex(find(obstacles, obstacle)!)
             
                 // for each removed obstacle, add a new one
-        
+//            if obstacle.position.y < 250 {
+//                spawnNewObstacle()
+//            }
+//            }
             var worldPosition = obstaclesLayer.convertToWorldSpace(obstacle.position)
             
              if worldPosition.y < 0.0 {
                 println("The position is negative")
-                obstacle.position = ccp(obstacle.position.x, obstacle.position.y + 700)
-                scrollSpeed = scrollSpeed + 2
+                obstacle.position = ccp(obstacle.position.x, obstacle.position.y + 600)
+                scrollSpeed = scrollSpeed++
                 score++
             }
         }
@@ -218,6 +227,9 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             restartButton.visible = true
             gameOver1.visible = true
             gameOver2.visible = true
+            highScore.visible = true
+            quitButton2.visible = true
+            highscoreLabel.visible = true
             scoreLabel.visible = false
             pauseButton.visible = false
             character.physicsBody.velocity.x = 0
@@ -226,6 +238,11 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             let moveBack = CCActionEaseBounceOut(action: move.reverse())
             let shakeSequence = CCActionSequence(array: [move, moveBack])
             runAction(shakeSequence)
+            let defaults = NSUserDefaults.standardUserDefaults()
+            var highscore = defaults.integerForKey("highscore")
+            if score > highscore {
+                defaults.setInteger(score, forKey: "highscore")
+            }
         }
 
     }
@@ -235,9 +252,23 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         CCDirector.sharedDirector().presentScene(scene)
     }
     
+    func updateHighscore() {
+        var newHighscore = NSUserDefaults.standardUserDefaults().integerForKey("highscore")
+        highscoreLabel.string = "\(newHighscore)"
+    }
     
+    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+        if keyPath == "highscore" {
+            updateHighscore()
+        }
+    }
 
-//   
+    func quit() {
+        let quitScene = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(quitScene, withTransition: CCTransition(fadeWithDuration: 0.3))
+        CCDirector.sharedDirector().resume()
+    }
+   
 //    func spawnNewObstacle() {
 //        var prevObstaclePos = firstObstaclePosition
 //        if obstacles.count > 0 {
@@ -245,10 +276,10 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
 //        }
 //      // create and add a new obstacle
 //        let blockage = CCBReader.load("Obstacle") as! Obstacle
-//       blockage.position = ccp(prevObstaclePos + distanceBetweenObstacles, 100)
+//       blockage.position = ccp(100, prevObstaclePos + distanceBetweenObstacles)
 //        blockage.setupRandomPosition()
 //       obstaclesLayer.addChild(blockage)
 //       obstacles.append(blockage)
 //   }
-    
+//    
 }
