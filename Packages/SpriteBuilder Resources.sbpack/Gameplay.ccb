@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>111</integer>
+	<integer>115</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -372,7 +372,7 @@
 				<array>
 					<dict>
 						<key>UUID</key>
-						<integer>89</integer>
+						<integer>114</integer>
 						<key>baseClass</key>
 						<string>CCBFile</string>
 						<key>children</key>
@@ -1417,7 +1417,7 @@
 						<key>value</key>
 						<array>
 							<real>174</real>
-							<real>249.09913635253906</real>
+							<real>247.55638122558594</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1795,8 +1795,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -4245,7 +4243,7 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.17029047012329102</real>
+			<real>0.11403703689575195</real>
 			<key>position</key>
 			<real>3.9000000953674316</real>
 			<key>resolution</key>
