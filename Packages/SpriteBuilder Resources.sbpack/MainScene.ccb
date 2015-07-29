@@ -1175,7 +1175,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>settings</string>
+							<string>about</string>
 							<integer>1</integer>
 						</array>
 					</dict>
@@ -1220,7 +1220,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Settings</string>
+							<string>About</string>
 							<false/>
 						</array>
 					</dict>
@@ -1430,6 +1430,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

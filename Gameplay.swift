@@ -39,6 +39,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     var scrollSpeed : CGFloat = 60
     var sinceTouch: CCTime = 0
     var gameOver = false
+    var userState = UserState()
     let motion: CMMotionManager! = CMMotionManager()
     var obstacles : [CCNode] = []
     var walls = [CCSprite]()
@@ -107,10 +108,14 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     }
     func pauseGame() {
         let pauseScene = CCBReader.loadAsScene("Pause")
+        
         CCDirector.sharedDirector().pause()
         CCDirector.sharedDirector().presentScene(pauseScene)
     }
     
+    override func onExit() {
+        userState.pauseState = pauseGame()
+    }
 //    override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
 //        var xTouch = touch.locationInWorld().x
 //        var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
@@ -267,6 +272,11 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         let quitScene = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(quitScene, withTransition: CCTransition(fadeWithDuration: 0.3))
         CCDirector.sharedDirector().resume()
+    }
+    
+    func about() {
+        let scene = CCBReader.loadAsScene("About")
+        CCDirector.sharedDirector().presentScene(scene)
     }
    
 //    func spawnNewObstacle() {
