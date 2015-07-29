@@ -113,9 +113,12 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         CCDirector.sharedDirector().presentScene(pauseScene)
     }
     
-    override func onExit() {
-        userState.pauseState = pauseGame()
-    }
+//    override func onExit() {
+//        userState.pauseState = pauseGame()
+//    }
+    
+    
+    
 //    override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
 //        var xTouch = touch.locationInWorld().x
 //        var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
