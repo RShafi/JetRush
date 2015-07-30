@@ -1117,7 +1117,7 @@
 				<key>displayName</key>
 				<string>CCButton</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>aboutButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -1137,7 +1137,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.13437500596046448</real>
+							<real>0.11562500149011612</real>
 							<real>0.035211268812417984</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -1430,6 +1430,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

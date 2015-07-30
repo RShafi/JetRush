@@ -11,7 +11,9 @@ import CoreMotion
 
 
 class Gameplay: CCNode, CCPhysicsCollisionDelegate {
-    
+   
+    weak var gameplayNode: CCNode!
+    weak var pauseNode: CCNode!
     weak var character: CCSprite!
     weak var restartButton: CCButton!
     weak var pauseButton: CCButton!
@@ -106,11 +108,10 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(gameplayScene)
     }
+    
     func pauseGame() {
-        let pauseScene = CCBReader.loadAsScene("Pause")
-        
         CCDirector.sharedDirector().pause()
-        CCDirector.sharedDirector().presentScene(pauseScene)
+        pauseNode.visible = true
     }
     
 //    override func onExit() {
@@ -277,12 +278,9 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         CCDirector.sharedDirector().resume()
     }
     
-    func about() {
-        let scene = CCBReader.loadAsScene("About")
-        CCDirector.sharedDirector().presentScene(scene)
-    }
+  
 
-   
+
 //    func spawnNewObstacle() {
 //        var prevObstaclePos = firstObstaclePosition
 //        if obstacles.count > 0 {
