@@ -445,7 +445,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Arial-BoldItalicMT</string>
+						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -605,7 +605,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.64999997615814209</real>
+							<real>0.64753526449203491</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -652,7 +652,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Arial-BoldItalicMT</string>
+						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -759,7 +759,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
+							<real>1</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -770,8 +770,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>50</real>
+							<real>50</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -977,7 +977,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1303,7 +1303,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1430,8 +1430,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

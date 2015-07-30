@@ -254,8 +254,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -337,7 +335,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -662,7 +660,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -988,7 +986,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Helvetica</string>
+						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>

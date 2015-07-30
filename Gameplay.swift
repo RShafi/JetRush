@@ -281,6 +281,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         let scene = CCBReader.loadAsScene("About")
         CCDirector.sharedDirector().presentScene(scene)
     }
+
    
 //    func spawnNewObstacle() {
 //        var prevObstaclePos = firstObstaclePosition
