@@ -10,5 +10,10 @@ import UIKit
 
 class About: CCNode {
    
+    weak var backButton: CCButton!
     
+    func back() {
+        let home = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(home)
+    }
 }

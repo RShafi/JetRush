@@ -34,6 +34,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var obstacle6: CCSprite!
     weak var obstacle7: CCSprite!
     weak var obstacle8: CCSprite!
+    weak var obstacle9: CCSprite!
     weak var bottom: CCSprite!
     weak var scoreLabel: CCLabelTTF!
     weak var obstaclesLayer : CCNode!
@@ -75,6 +76,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         obstacles.append(obstacle6)
         obstacles.append(obstacle7)
         obstacles.append(obstacle8)
+        obstacles.append(obstacle9)
         walls.append(wallOne)
         walls.append(wallTwo)
         NSUserDefaults.standardUserDefaults().addObserver(self, forKeyPath: "highscore", options: .allZeros, context: nil)
