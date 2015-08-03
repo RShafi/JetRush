@@ -12,7 +12,7 @@
 		0F153B771B55AF8000384F35 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F153B761B55AF8000384F35 /* MainScene.swift */; };
 		0F4BA6731B62AE79006C6A51 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */; };
 		0F4BA6771B62B871006C6A51 /* Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA6761B62B871006C6A51 /* Pause.swift */; };
-		0F6036111B698E0900631D4D /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6036101B698E0900631D4D /* UserState.swift */; };
+		0F55D8FD1B70278600975632 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55D8FC1B70278600975632 /* Monster.swift */; };
 		0F91B1231B6A909700910569 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1221B6A909700910569 /* Goal.swift */; };
 		0F91B1271B6A96C700910569 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1261B6A96C700910569 /* About.swift */; };
 		0FBE0A571B616F5600189001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBE0A561B616F5600189001 /* CoreMotion.framework */; };
@@ -161,7 +161,7 @@
 		0F153B761B55AF8000384F35 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		0F4BA6761B62B871006C6A51 /* Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pause.swift; sourceTree = "<group>"; };
-		0F6036101B698E0900631D4D /* UserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		0F55D8FC1B70278600975632 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		0F91B1221B6A909700910569 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		0F91B1261B6A96C700910569 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		0FBE0A561B616F5600189001 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -457,10 +457,10 @@
 				0F153B681B55AA4B00384F35 /* Character.swift */,
 				0F153B6E1B55AA6300384F35 /* Gameplay.swift */,
 				0F91B1221B6A909700910569 /* Goal.swift */,
-				0F6036101B698E0900631D4D /* UserState.swift */,
 				0F4BA6761B62B871006C6A51 /* Pause.swift */,
 				0F91B1261B6A96C700910569 /* About.swift */,
 				0FC55AC11B581D6800517425 /* Obstacle.swift */,
+				0F55D8FC1B70278600975632 /* Monster.swift */,
 				0F153B761B55AF8000384F35 /* MainScene.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
@@ -839,9 +839,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F55D8FD1B70278600975632 /* Monster.swift in Sources */,
 				0F153B6F1B55AA6300384F35 /* Gameplay.swift in Sources */,
 				0F4BA6771B62B871006C6A51 /* Pause.swift in Sources */,
-				0F6036111B698E0900631D4D /* UserState.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				0FC55AC21B581D6800517425 /* Obstacle.swift in Sources */,
 				0F91B1271B6A96C700910569 /* About.swift in Sources */,

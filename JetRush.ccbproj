@@ -177,15 +177,9 @@
 			<integer>1</integer>
 		</dict>
 		<key>floors-highres</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-		</dict>
+		<dict/>
 		<key>walls-highres</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-		</dict>
+		<dict/>
 	</dict>
 	<key>versionStr</key>
 	<string>revision : eea568a5c7

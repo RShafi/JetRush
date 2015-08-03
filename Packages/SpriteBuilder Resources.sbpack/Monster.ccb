@@ -44,9 +44,92 @@
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
-		<string></string>
+		<string>monster</string>
 		<key>memberVarAssignmentType</key>
 		<integer>1</integer>
+		<key>physicsBody</key>
+		<dict>
+			<key>affectedByGravity</key>
+			<true/>
+			<key>allowsRotation</key>
+			<true/>
+			<key>bodyShape</key>
+			<integer>0</integer>
+			<key>collisionCategories</key>
+			<array/>
+			<key>collisionMask</key>
+			<array/>
+			<key>collisionType</key>
+			<string>level</string>
+			<key>cornerRadius</key>
+			<real>0.0</real>
+			<key>density</key>
+			<real>1</real>
+			<key>dynamic</key>
+			<false/>
+			<key>elasticity</key>
+			<real>0.30000001192092896</real>
+			<key>friction</key>
+			<real>0.30000001192092896</real>
+			<key>points</key>
+			<array>
+				<array>
+					<real>2.4445614814758301</real>
+					<real>2.1340279579162598</real>
+				</array>
+				<array>
+					<real>1.1286568641662598</real>
+					<real>17.266931533813477</real>
+				</array>
+				<array>
+					<real>14.287703514099121</real>
+					<real>18.582836151123047</real>
+				</array>
+				<array>
+					<real>13.629751205444336</real>
+					<real>13.977169990539551</real>
+				</array>
+				<array>
+					<real>14.287703514099121</real>
+					<real>2.1340279579162598</real>
+				</array>
+			</array>
+			<key>polygons</key>
+			<array>
+				<array>
+					<array>
+						<real>13.629751205444336</real>
+						<real>13.977169990539551</real>
+					</array>
+					<array>
+						<real>14.287703514099121</real>
+						<real>18.582836151123047</real>
+					</array>
+					<array>
+						<real>1.1286568641662598</real>
+						<real>17.266931533813477</real>
+					</array>
+				</array>
+				<array>
+					<array>
+						<real>1.1286568641662598</real>
+						<real>17.266931533813477</real>
+					</array>
+					<array>
+						<real>2.4445614814758301</real>
+						<real>2.1340279579162598</real>
+					</array>
+					<array>
+						<real>14.287703514099121</real>
+						<real>2.1340279579162598</real>
+					</array>
+					<array>
+						<real>13.629751205444336</real>
+						<real>13.977169990539551</real>
+					</array>
+				</array>
+			</array>
+		</dict>
 		<key>properties</key>
 		<array>
 			<dict>
@@ -103,7 +186,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Shoot Em Up Enemy Sprite Pack/Asset Files/sprite_enemy_boss02_turret_0.png</string>
+					<string>Shoot Em Up Enemy Sprite Pack/Asset Files/sprite_enemy_bigprobe_armored_0.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -139,6 +222,8 @@
 				<array/>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
