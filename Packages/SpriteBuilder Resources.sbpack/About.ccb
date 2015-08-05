@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>16</integer>
+	<integer>17</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -1111,7 +1111,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.25926393270492554</real>
+							<real>0.19988894462585449</real>
 							<real>0.55866545438766479</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -1149,7 +1149,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>Pause / iPhone Icons:</string>
+							<string>Icons:</string>
 							<false/>
 						</array>
 					</dict>
@@ -1168,7 +1168,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>15</real>
+							<real>25</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1375,7 +1375,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>12</real>
+							<real>15</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1495,6 +1495,116 @@ Sci-Fi Virtual Novel Kit</string>
 			</dict>
 			<dict>
 				<key>UUID</key>
+				<integer>16</integer>
+				<key>baseClass</key>
+				<string>CCSprite</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>Exit-100</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>1</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>0.51875001192092896</real>
+							<real>0.10551396012306213</real>
+							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.5</real>
+							<real>0.5</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>spriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string>Exit-100.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>normalMapSpriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string></string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>color</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>effects</string>
+						<key>type</key>
+						<string>EffectControl</string>
+						<key>value</key>
+						<array/>
+					</dict>
+				</array>
+				<key>selected</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>UUID</key>
 				<integer>13</integer>
 				<key>baseClass</key>
 				<string>CCButton</string>
@@ -1525,7 +1635,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.51875001192092896</real>
 							<real>0.10551396012306213</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -1550,8 +1660,8 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>1.644875168800354</real>
+							<real>1.516514778137207</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1608,7 +1718,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Back</string>
+							<string></string>
 							<false/>
 						</array>
 					</dict>
@@ -1620,7 +1730,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -1631,7 +1741,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonHighlighted.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -1655,7 +1765,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -1674,7 +1784,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>ccbResources/ccbButtonNormal.png</string>
+							<string></string>
 						</array>
 					</dict>
 					<dict>
@@ -1851,11 +1961,11 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>61.964462280273438</real>
-							<real>263</real>
+							<real>0.19363895058631897</real>
+							<real>0.46302816271781921</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -2058,11 +2168,11 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>225</real>
-							<real>263</real>
+							<real>0.703125</real>
+							<real>0.46302816271781921</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>

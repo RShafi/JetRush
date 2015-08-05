@@ -78,6 +78,31 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>About Filled-100.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Battle_-_War_and_Conquest.wav</key>
+		<dict>
+			<key>format_ios_sound</key>
+			<integer>1</integer>
+		</dict>
+		<key>Exit-100.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Play Filled-100 (1).png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Restart-100.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>Sci-Fi Battlers</key>
 		<dict>
 			<key>isSmartSpriteSheet</key>
@@ -90,10 +115,25 @@
 			<key>previewFolderHidden</key>
 			<false/>
 		</dict>
+		<key>Settings Filled-100 (1).png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>4</integer>
+		</dict>
 		<key>Shoot Em Up Enemy Sprite Pack</key>
 		<dict/>
 		<key>Sprites</key>
 		<dict/>
+		<key>Thumb Up Filled-100.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Thumbs Down Filled-100.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>

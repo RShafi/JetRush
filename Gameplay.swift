@@ -14,8 +14,12 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
    
     weak var gameplayNode: CCNode!
     weak var pauseNode: CCNode!
+    weak var restartIcon: CCSprite!
+    weak var quitIcon: CCSprite!
     weak var wallNode: CCNode!
     weak var character: CCSprite!
+    weak var iphone1: CCSprite!
+    weak var iphone2: CCSprite!
     weak var restartButton: CCButton!
     weak var pauseButton: CCButton!
     weak var quitButton2: CCButton!
@@ -58,6 +62,13 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             gameOver2.string = "\(score)"
         }
     }
+    
+    var highscore: Int = NSUserDefaults.standardUserDefaults().integerForKey("myHighScore") ?? 0 {
+        didSet {
+            NSUserDefaults.standardUserDefaults().setInteger(highscore, forKey:"myHighScore")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
 //    var gameOverScore : Int = 0 {
 //        didSet {
 //            gameOver2.string = "\(gameOverScore)"
@@ -85,9 +96,9 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         walls.append(wallOne)
 //        walls.append(wallTwo)
 //        walls.append(wallThree)
-        NSUserDefaults.standardUserDefaults().addObserver(self, forKeyPath: "highscore", options: .allZeros, context: nil)
-        
-        updateHighscore()
+//        NSUserDefaults.standardUserDefaults().addObserver(self, forKeyPath: "highscore", options: .allZeros, context: nil)
+//        
+//        updateHighscore()
      //   var rect = CGRectUnion(wallOne.boundingBox(), bottom.boundingBox())
       //  let follow = CCActionFollow(target: character, worldBoundary: rect)
      //   followNode.runAction(follow)
@@ -252,6 +263,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         if gameOver == false {
             gameOver = true
             restartButton.visible = true
+            restartIcon.visible = true
+            quitIcon.visible = true
             gameOver1.visible = true
             gameOver2.visible = true
             highScore.visible = true
@@ -266,10 +279,15 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             let shakeSequence = CCActionSequence(array: [move, moveBack])
             runAction(shakeSequence)
             let defaults = NSUserDefaults.standardUserDefaults()
-            var highscore = defaults.integerForKey("highscore")
+//            var highscore = defaults.integerForKey("highscore")
+//            if score > highscore {
+//                defaults.setInteger(score, forKey: "highscore")
+//            }
             if score > highscore {
-                defaults.setInteger(score, forKey: "highscore")
+                highscore = score
+                println(highscore)
             }
+            highscoreLabel.string = "\(highscore)"
         }
 
     }
@@ -283,12 +301,12 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         var newHighscore = NSUserDefaults.standardUserDefaults().integerForKey("highscore")
         highscoreLabel.string = "\(newHighscore)"
     }
-    
-    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
-        if keyPath == "highscore" {
-            updateHighscore()
-        }
-    }
+//
+//    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+//        if keyPath == "highscore" {
+//            updateHighscore()
+//        }
+//    }
 
     func quit() {
         let quitScene = CCBReader.loadAsScene("MainScene")

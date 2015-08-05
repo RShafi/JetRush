@@ -11,6 +11,7 @@ import Foundation
 class MainScene: CCNode {
     
     weak var aboutButton: CCButton!
+    weak var settingsButton: CCButton!
     
     func play() {
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
@@ -23,5 +24,11 @@ class MainScene: CCNode {
         let scene = CCBReader.loadAsScene("About")
         CCDirector.sharedDirector().presentScene(scene)
     }
+    
+    func settings() {
+        let scene = CCBReader.loadAsScene("Settings")
+        CCDirector.sharedDirector().presentScene(scene)
+    }
+
     
 }
