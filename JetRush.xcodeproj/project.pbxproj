@@ -16,8 +16,6 @@
 		0F91B1231B6A909700910569 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1221B6A909700910569 /* Goal.swift */; };
 		0F91B1271B6A96C700910569 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1261B6A96C700910569 /* About.swift */; };
 		0FBE0A571B616F5600189001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBE0A561B616F5600189001 /* CoreMotion.framework */; };
-		0FBF358D1B7124D7008E2901 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF358C1B7124D7008E2901 /* UserState.swift */; };
-		0FBF35971B7151D8008E2901 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF35961B7151D8008E2901 /* Settings.swift */; };
 		0FC55AC21B581D6800517425 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC55AC11B581D6800517425 /* Obstacle.swift */; };
 		5B121030197484FA004C1E1D /* JetRushActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* JetRushActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
@@ -164,11 +162,10 @@
 		0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		0F4BA6761B62B871006C6A51 /* Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pause.swift; sourceTree = "<group>"; };
 		0F55D8FC1B70278600975632 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		0F89B5BA1B72747B0023FD53 /* Battle_-_War_and_Conquest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Battle_-_War_and_Conquest.m4a"; path = "Source/Resources/Published-iOS/Battle_-_War_and_Conquest.m4a"; sourceTree = "<group>"; };
 		0F91B1221B6A909700910569 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		0F91B1261B6A96C700910569 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		0FBE0A561B616F5600189001 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		0FBF358C1B7124D7008E2901 /* UserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
-		0FBF35961B7151D8008E2901 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0FC55AC11B581D6800517425 /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -460,14 +457,13 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				0F153B681B55AA4B00384F35 /* Character.swift */,
 				0F153B6E1B55AA6300384F35 /* Gameplay.swift */,
-				0FBF35961B7151D8008E2901 /* Settings.swift */,
-				0FBF358C1B7124D7008E2901 /* UserState.swift */,
 				0F91B1221B6A909700910569 /* Goal.swift */,
 				0F4BA6761B62B871006C6A51 /* Pause.swift */,
 				0F91B1261B6A96C700910569 /* About.swift */,
 				0FC55AC11B581D6800517425 /* Obstacle.swift */,
 				0F55D8FC1B70278600975632 /* Monster.swift */,
 				0F153B761B55AF8000384F35 /* MainScene.swift */,
+				0F89B5BA1B72747B0023FD53 /* Battle_-_War_and_Conquest.m4a */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			name = Source;
@@ -849,9 +845,7 @@
 				0F153B6F1B55AA6300384F35 /* Gameplay.swift in Sources */,
 				0F4BA6771B62B871006C6A51 /* Pause.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
-				0FBF358D1B7124D7008E2901 /* UserState.swift in Sources */,
 				0FC55AC21B581D6800517425 /* Obstacle.swift in Sources */,
-				0FBF35971B7151D8008E2901 /* Settings.swift in Sources */,
 				0F91B1271B6A96C700910569 /* About.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				0F153B771B55AF8000384F35 /* MainScene.swift in Sources */,

@@ -1356,7 +1356,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>https://icons8.com/</string>
+							<string>[Copyright](C) https://icons8.com/</string>
 							<false/>
 						</array>
 					</dict>
@@ -1375,7 +1375,7 @@ Sci-Fi Virtual Novel Kit</string>
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
-							<real>15</real>
+							<real>12</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1600,8 +1600,6 @@ Sci-Fi Virtual Novel Kit</string>
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

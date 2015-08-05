@@ -30,5 +30,4 @@ class MainScene: CCNode {
         CCDirector.sharedDirector().presentScene(scene)
     }
 
-    
 }
