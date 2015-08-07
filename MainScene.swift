@@ -12,8 +12,10 @@ class MainScene: CCNode {
     
     weak var aboutButton: CCButton!
     weak var settingsButton: CCButton!
+    weak var playButton: CCButton!
     
     func play() {
+        playButton.visible = false
         let gameplayScene = CCBReader.loadAsScene("Gameplay")
       //  CCDirector.sharedDirector().presentScene(gameplayScene)
         var transition = CCTransition(fadeWithDuration: 0.3)
@@ -29,5 +31,17 @@ class MainScene: CCNode {
         let scene = CCBReader.loadAsScene("Settings")
         CCDirector.sharedDirector().presentScene(scene)
     }
-
+    
+    // Preload...
+//    [[OALSimpleAudio sharedInstance] preloadBg:@"Battle_-_War_and_Conquest.m4a"];
+    func playMusic() {
+        let audio = OALSimpleAudio.sharedInstance().preloadBg("Battle_-_War_and_Conquest.m4a")
+    // Play (and loop the music)...
+  //  [[OALSimpleAudio sharedInstance] playBgWithLoop:YES];
+        OALSimpleAudio.sharedInstance().playBgWithLoop(audio)
+    }
+    func stopMusic() {
+        OALSimpleAudio.sharedInstance().stopBg()
+    }
+    
 }

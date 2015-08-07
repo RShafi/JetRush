@@ -642,7 +642,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>Rush</string>
+							<string>Fall</string>
 							<false/>
 						</array>
 					</dict>
@@ -791,7 +791,7 @@
 				<key>displayName</key>
 				<string>Play button</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>playButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -812,10 +812,10 @@
 						<key>value</key>
 						<array>
 							<real>0.53698569536209106</real>
-							<real>168.96000671386719</real>
+							<real>0.33000001311302185</real>
 							<integer>0</integer>
 							<integer>2</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -1571,8 +1571,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.93300002813339233</real>
-							<real>0.046999998390674591</real>
+							<real>0.90494793653488159</real>
+							<real>0.048828125</real>
 							<integer>3</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1774,20 +1774,53 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.033333335071802139</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>stopMusic</string>
+							<integer>1</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.1666666716337204</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>playMusic</string>
+							<integer>1</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>11</integer>
 			</dict>
 			<key>chainedSequenceId</key>
 			<integer>0</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>130</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>7.0333333015441895</real>
+			<real>0.1666666716337204</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

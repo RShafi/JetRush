@@ -28,7 +28,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var gameOver1: CCLabelTTF!
     weak var gameOver2: CCLabelTTF!
     weak var highScore: CCLabelTTF!
-    weak var highscoreLabel : CCLabelTTF!
+    weak var highscoreLabel: CCLabelTTF!
+    weak var newHighScore: CCLabelTTF!
     weak var wallOne: CCSprite!
 //    weak var wallTwo: CCSprite!
 //    weak var wallThree: CCSprite!
@@ -41,8 +42,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var obstacle7: CCSprite!
     weak var obstacle8: CCSprite!
 //    weak var obstacle9: CCSprite!
-    weak var monster1: CCSprite!
-    weak var monster2: CCSprite!
+    weak var powerup1: CCSprite!
+    weak var powerup2: CCSprite!
     weak var bottom: CCSprite!
     weak var scoreLabel: CCLabelTTF!
     weak var obstaclesLayer : CCNode!
@@ -52,6 +53,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     var gameOver = false
     let motion: CMMotionManager! = CMMotionManager()
     var obstacles : [CCNode] = []
+    var powerups: [CCNode] = []
     var walls = [CCSprite]()
     let firstObstaclePosition : CGFloat = 280
     let distanceBetweenObstacles : CGFloat = 160
@@ -90,8 +92,8 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         obstacles.append(obstacle6)
         obstacles.append(obstacle7)
         obstacles.append(obstacle8)
-        obstacles.append(monster1)
-        obstacles.append(monster2)
+        powerups.append(powerup1)
+        powerups.append(powerup2)
 //        obstacles.append(obstacle9)
         walls.append(wallOne)
 //        walls.append(wallTwo)
@@ -132,6 +134,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     func pauseGame() {
         CCDirector.sharedDirector().pause()
         pauseNode.visible = true
+        OALSimpleAudio.sharedInstance().stopBg()
     }
     
 //    override func onExit() {
@@ -225,6 +228,16 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
 //                wall.position.y = 550
 //            }
 //        }
+        
+        for powerup in powerups.reverse() {
+            var worldPosition = obstaclesLayer.convertToWorldSpace(powerup.position)
+            
+            if worldPosition.y < 120 {
+                powerup.position = ccp(powerup.position.x, powerup.position.y + 600)
+            }
+            
+        }
+    
         for obstacle in obstacles.reverse() {
 //            let obstacleWorldPosition = obstaclesLayer.convertToWorldSpace(obstacle.position)
 //            let obstacleScreenPosition = convertToNodeSpace(obstacleWorldPosition)
@@ -247,7 +260,6 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
                 scrollSpeed = scrollSpeed++
                 score++
             }
-            
            
         }
     
@@ -285,6 +297,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
 //            }
             if score > highscore {
                 highscore = score
+                newHighScore.visible = true
                 println(highscore)
             }
             highscoreLabel.string = "\(highscore)"
@@ -313,9 +326,15 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         CCDirector.sharedDirector().presentScene(quitScene, withTransition: CCTransition(fadeWithDuration: 0.3))
         CCDirector.sharedDirector().resume()
     }
+    func stopMusic() {
+        OALSimpleAudio.sharedInstance().stopBg()
+    }
     
   
-
+    func startMusic() {
+        let audio = OALSimpleAudio.sharedInstance().preloadBg("Battle - Armies Advance.mp3")
+        OALSimpleAudio.sharedInstance().playBgWithLoop(audio)
+    }
 
 //    func spawnNewObstacle() {
 //        var prevObstaclePos = firstObstaclePosition

@@ -13,4 +13,5 @@ class Character: CCSprite {
     func explode() {
         self.animationManager.runAnimationsForSequenceNamed("Explode")
     }
+    
 }

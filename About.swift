@@ -16,4 +16,7 @@ class About: CCNode {
         let home = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(home)
     }
+    func stopMusic() {
+        OALSimpleAudio.sharedInstance().stopBg()
+    }
 }
