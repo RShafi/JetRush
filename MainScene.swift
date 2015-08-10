@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import Mixpanel
 
 class MainScene: CCNode {
     
     weak var aboutButton: CCButton!
     weak var settingsButton: CCButton!
     weak var playButton: CCButton!
+    var mixpanel = Mixpanel.sharedInstance()
     
     func play() {
         playButton.visible = false
@@ -20,6 +22,7 @@ class MainScene: CCNode {
       //  CCDirector.sharedDirector().presentScene(gameplayScene)
         var transition = CCTransition(fadeWithDuration: 0.3)
         CCDirector.sharedDirector().presentScene(gameplayScene, withTransition: transition)
+        mixpanel.track("Game Started", properties: ["Button": "Play Button"])
     }
    
     func about() {

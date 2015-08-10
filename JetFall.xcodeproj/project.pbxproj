@@ -20,9 +20,9 @@
 		0FC55AC21B581D6800517425 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC55AC11B581D6800517425 /* Obstacle.swift */; };
 		0FDDDF181B72A31B00B2358E /* Battle - Armies Advance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDDF171B72A31B00B2358E /* Battle - Armies Advance.mp3 */; };
 		0FDDDF1C1B72C18300B2358E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDDF1B1B72C18300B2358E /* Images.xcassets */; };
+		425360EB8996BFF782624FB5 /* Pods_JetFall_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10650A09C4F6A02607EB0C5 /* Pods_JetFall_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5B121030197484FA004C1E1D /* JetRushActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* JetRushActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
-		6CF6D5E2CB391D8AA2B48260 /* Pods_JetRush_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A270A8874F95C8E225E58A /* Pods_JetRush_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7A40360419DDEE84007B6E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A40360319DDEE84007B6E8F /* main.m */; };
 		7A4036EB19DE3F8E007B6E8F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		7A4036EC19DE3F90007B6E8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3117B978D7009739AE /* QuartzCore.framework */; };
@@ -165,14 +165,16 @@
 		0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		0F4BA6761B62B871006C6A51 /* Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pause.swift; sourceTree = "<group>"; };
 		0F55D8FC1B70278600975632 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		0F56A7EB1B788515004324C1 /* Pods_JetRush_iOS.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Pods_JetRush_iOS.framework.dSYM; path = "../../../../Library/Developer/Xcode/DerivedData/JetRush-alnthbwawnkxylgqtqifqvilbqum/Build/Intermediates/ArchiveIntermediates/JetRush/BuildProductsPath/Release-iphoneos/Pods_JetRush_iOS.framework.dSYM"; sourceTree = "<group>"; };
 		0F89B5BA1B72747B0023FD53 /* Battle_-_War_and_Conquest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Battle_-_War_and_Conquest.m4a"; path = "Source/Resources/Published-iOS/Battle_-_War_and_Conquest.m4a"; sourceTree = "<group>"; };
 		0F91B1221B6A909700910569 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		0F91B1261B6A96C700910569 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		0FB55E0F1B75599B00D2AB46 /* Mixpanel-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mixpanel-Briding-Header.h"; sourceTree = "<group>"; };
 		0FBE0A561B616F5600189001 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		0FC55AC11B581D6800517425 /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
 		0FDDDF171B72A31B00B2358E /* Battle - Armies Advance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Battle - Armies Advance.mp3"; path = "../../../../Downloads/Exclusive DLC Pack (BTA tier)/Rebel Rapture Music Pack/MP3s/Battle - Armies Advance.mp3"; sourceTree = "<group>"; };
 		0FDDDF1B1B72C18300B2358E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "JetRush iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
-		2D1CA08CC7F1211DAC0BFFE4 /* Pods-JetRush iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetRush iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JetRush iOS/Pods-JetRush iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2D72DD96E5EC286020607D52 /* Pods-JetFall iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFall iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JetFall iOS/Pods-JetFall iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -183,7 +185,6 @@
 		5B121033197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Android/Info.plist; sourceTree = "<group>"; };
 		5B121034197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/iOS/Info.plist; sourceTree = "<group>"; };
 		5BA4619E1974C88900785744 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AndroidManifest.xml; path = Platforms/Android/AndroidManifest.xml; sourceTree = "<group>"; };
-		61A270A8874F95C8E225E58A /* Pods_JetRush_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetRush_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4035FF19DDEE84007B6E8F /* JetFall Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JetFall Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A40360219DDEE84007B6E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Mac/Info.plist; sourceTree = "<group>"; };
 		7A40360319DDEE84007B6E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/Mac/main.m; sourceTree = "<group>"; };
@@ -197,6 +198,7 @@
 		7AFCD5DD19E9BDC200BCCCDA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Source/Bridging-Header.h"; sourceTree = "<group>"; };
 		7BF6AF9F1A425F9800FFF9BA /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../../../../Library/SBAndroid/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		8908057DA85BDA739982CBF0 /* Pods-JetFall iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFall iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JetFall iOS/Pods-JetFall iOS.release.xcconfig"; sourceTree = "<group>"; };
 		927F61BF196C771E000F43EF /* JetFall Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JetFall Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -235,7 +237,7 @@
 		BC5399D51A44DCC90063F482 /* GLActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLActivityKit.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/GLActivityKit.framework"; sourceTree = "<group>"; };
 		BC5399D61A44DCC90063F482 /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
 		BC5399D71A44DCC90063F482 /* JavaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaKit.framework; path = "../../../../Library/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaKit.framework"; sourceTree = "<group>"; };
-		C6A1AEA6D57EECFDD8000604 /* Pods-JetRush iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetRush iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JetRush iOS/Pods-JetRush iOS.release.xcconfig"; sourceTree = "<group>"; };
+		D10650A09C4F6A02607EB0C5 /* Pods_JetFall_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetFall_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D352B48019EC608A00829775 /* MetalShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MetalShaders; path = Source/MetalShaders; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -293,7 +295,7 @@
 				B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */,
 				B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */,
 				B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */,
-				6CF6D5E2CB391D8AA2B48260 /* Pods_JetRush_iOS.framework in Frameworks */,
+				425360EB8996BFF782624FB5 /* Pods_JetFall_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +305,8 @@
 		17D60257F9F0A03A324A3F26 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D1CA08CC7F1211DAC0BFFE4 /* Pods-JetRush iOS.debug.xcconfig */,
-				C6A1AEA6D57EECFDD8000604 /* Pods-JetRush iOS.release.xcconfig */,
+				2D72DD96E5EC286020607D52 /* Pods-JetFall iOS.debug.xcconfig */,
+				8908057DA85BDA739982CBF0 /* Pods-JetFall iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -475,6 +477,7 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				0F153B681B55AA4B00384F35 /* Character.swift */,
 				0F153B6E1B55AA6300384F35 /* Gameplay.swift */,
+				0FB55E0F1B75599B00D2AB46 /* Mixpanel-Briding-Header.h */,
 				0F91B1221B6A909700910569 /* Goal.swift */,
 				0F4BA6761B62B871006C6A51 /* Pause.swift */,
 				0F91B1261B6A96C700910569 /* About.swift */,
@@ -536,6 +539,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F56A7EB1B788515004324C1 /* Pods_JetRush_iOS.framework.dSYM */,
 				0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */,
 				0FBE0A561B616F5600189001 /* CoreMotion.framework */,
 				BC5399D31A44DCC90063F482 /* AndroidKit.framework */,
@@ -559,7 +563,7 @@
 				B77F1B3D17B978D7009739AE /* Foundation.framework */,
 				B77F1B3F17B978D7009739AE /* CoreGraphics.framework */,
 				B77F1B4117B978D7009739AE /* CoreText.framework */,
-				61A270A8874F95C8E225E58A /* Pods_JetRush_iOS.framework */,
+				D10650A09C4F6A02607EB0C5 /* Pods_JetFall_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -815,7 +819,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${SRCROOT}/Podfile.lock\" \"${SRCROOT}/Pods/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6D0CD49E89A854D42943D03E /* Copy Pods Resources */ = {
@@ -830,7 +834,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetRush iOS/Pods-JetRush iOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetFall iOS/Pods-JetFall iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		927F619B196C771E000F43EF /* Run Script */ = {
@@ -887,7 +891,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetRush iOS/Pods-JetRush iOS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetFall iOS/Pods-JetFall iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1163,7 +1167,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1194,7 +1198,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1202,7 +1206,7 @@
 		};
 		B77F1CDF17B978D8009739AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D1CA08CC7F1211DAC0BFFE4 /* Pods-JetRush iOS.debug.xcconfig */;
+			baseConfigurationReference = 2D72DD96E5EC286020607D52 /* Pods-JetFall iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1224,7 +1228,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -1234,7 +1238,7 @@
 				);
 				PRODUCT_NAME = JetFall;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/RShafi/Desktop/Assignments/Swift/JetRush.spritebuilder/Mixpanel-Briding-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1242,7 +1246,7 @@
 		};
 		B77F1CE017B978D8009739AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A1AEA6D57EECFDD8000604 /* Pods-JetRush iOS.release.xcconfig */;
+			baseConfigurationReference = 8908057DA85BDA739982CBF0 /* Pods-JetFall iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1263,7 +1267,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Source/Resources/Platforms/iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -1272,7 +1276,7 @@
 				);
 				PRODUCT_NAME = JetFall;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/RShafi/Desktop/Assignments/Swift/JetRush.spritebuilder/Mixpanel-Briding-Header.h";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

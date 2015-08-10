@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreMotion
-
+import Mixpanel
 
 class Gameplay: CCNode, CCPhysicsCollisionDelegate {
    
@@ -48,6 +48,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var scoreLabel: CCLabelTTF!
     weak var obstaclesLayer : CCNode!
     weak var followNode: CCNode!
+    var mixpanel = Mixpanel.sharedInstance()
     var scrollSpeed : CGFloat = 60
     var sinceTouch: CCTime = 0
     var gameOver = false
@@ -302,12 +303,14 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             }
             highscoreLabel.string = "\(highscore)"
         }
-
+        mixpanel.track("Game Over", properties: ["Score" : score])
+//        mixpanel.track("Game Over", properties: ["Time Played" : ])
     }
     
     func restart() {
         let scene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(scene)
+        mixpanel.track("Game Started", properties: ["Button": "Restart Button"])
     }
     
     func updateHighscore() {
@@ -325,6 +328,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         let quitScene = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().presentScene(quitScene, withTransition: CCTransition(fadeWithDuration: 0.3))
         CCDirector.sharedDirector().resume()
+        mixpanel.track("Game Exited", properties: ["Button": "Game Over Exit"])
     }
     func stopMusic() {
         OALSimpleAudio.sharedInstance().stopBg()

@@ -3,15 +3,15 @@
 
 use_frameworks!
 
-target 'JetRush iOS' do
+target 'JetFall iOS' do
   pod ‘Mixpanel’
 end
 
-target 'JetRush Android' do
+target 'JetFall Android' do
 
 end
 
-target 'JetRush Mac' do
+target 'JetFall Mac' do
 
 end
 

@@ -52,8 +52,8 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework 'Pods-JetRush iOS/Mixpanel.framework'
+  install_framework 'Pods-JetFall iOS/Mixpanel.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework 'Pods-JetRush iOS/Mixpanel.framework'
+  install_framework 'Pods-JetFall iOS/Mixpanel.framework'
 fi
