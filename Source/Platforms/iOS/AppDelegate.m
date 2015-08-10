@@ -28,14 +28,24 @@
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
 #import "Mixpanel.h"
+#import <Chartboost/Chartboost.h>
+#import "AppDelegate.h"
+#import <CommonCrypto/CommonDigest.h>
+#import <AdSupport/AdSupport.h>
 
 @implementation AppController
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    // Initialize the Chartboost library
+    [Chartboost startWithAppId:@"55c9193a0d60257c17050e4c"
+                  appSignature:@"848df0ac72c5fa4e5e079f2bd72eb4e1d50605aa"
+                      delegate:self];
+    
     [Mixpanel sharedInstanceWithToken:@"c084eea8f1891eb5e38f4d0b0ba1f920"];
     [[Mixpanel sharedInstance] track:@"App launched"];
+    
     
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support

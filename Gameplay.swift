@@ -52,6 +52,12 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     var scrollSpeed : CGFloat = 60
     var sinceTouch: CCTime = 0
     var gameOver = false
+    var adCounter: Int = NSUserDefaults.standardUserDefaults().integerForKey("myAds") ?? 0 {
+      didSet {
+         NSUserDefaults.standardUserDefaults().setInteger(adCounter, forKey:"myAds")
+         NSUserDefaults.standardUserDefaults().synchronize()
+      }
+   }
     let motion: CMMotionManager! = CMMotionManager()
     var obstacles : [CCNode] = []
     var powerups: [CCNode] = []
@@ -144,32 +150,32 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     
     
     
-//    override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
-//        var xTouch = touch.locationInWorld().x
-//        var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
-//        if gameOver == false {
-//            if xTouch < screenHalf {
-//                left()
-//            }
-//            else {
-//                right()
-//            }
-//        }
-//    }
-//    func tap() {
-//        self.animationManager.runAnimationsForSequenceNamed("Tap")
-//    }
-//    
-//    
-//    
-//    func right() {
-//        character.physicsBody.applyImpulse(ccp(100, 0))
-//
-//    }
-//
-//    func left() {
-//        character.physicsBody.applyImpulse(ccp(-100, 0))
-//    }
+    override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
+        var xTouch = touch.locationInWorld().x
+        var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
+        if gameOver == false {
+            if xTouch < screenHalf {
+                left()
+            }
+            else {
+                right()
+            }
+        }
+    }
+    func tap() {
+        self.animationManager.runAnimationsForSequenceNamed("Tap")
+    }
+    
+    
+    
+    func right() {
+        character.physicsBody.applyImpulse(ccp(100, 0))
+
+    }
+
+    func left() {
+        character.physicsBody.applyImpulse(ccp(-100, 0))
+    }
   
     override func update(delta: CCTime) {
         
@@ -305,8 +311,16 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         }
         mixpanel.track("Game Over", properties: ["Score" : score])
 //        mixpanel.track("Game Over", properties: ["Time Played" : ])
+      
+      if adCounter == 3 {
+         Chartboost.showInterstitial(CBLocationLevelComplete)
+         adCounter = 0
+      }
+      else {
+         adCounter++
+      }
     }
-    
+   
     func restart() {
         let scene = CCBReader.loadAsScene("Gameplay")
         CCDirector.sharedDirector().presentScene(scene)

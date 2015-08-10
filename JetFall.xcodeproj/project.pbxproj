@@ -15,6 +15,8 @@
 		0F4BA6771B62B871006C6A51 /* Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA6761B62B871006C6A51 /* Pause.swift */; };
 		0F55D8FD1B70278600975632 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55D8FC1B70278600975632 /* Monster.swift */; };
 		0F6C03821B7937DE0075A38F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F6C03811B7937DE0075A38F /* Settings.bundle */; };
+		0F6C03841B7952FF0075A38F /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6C03831B7952FF0075A38F /* Chartboost.framework */; };
+		0F6C03861B7953270075A38F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6C03851B7953270075A38F /* StoreKit.framework */; };
 		0F91B1231B6A909700910569 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1221B6A909700910569 /* Goal.swift */; };
 		0F91B1271B6A96C700910569 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1261B6A96C700910569 /* About.swift */; };
 		0FBE0A571B616F5600189001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBE0A561B616F5600189001 /* CoreMotion.framework */; };
@@ -161,13 +163,15 @@
 
 /* Begin PBXFileReference section */
 		0F153B681B55AA4B00384F35 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		0F153B6E1B55AA6300384F35 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
+		0F153B6E1B55AA6300384F35 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		0F153B761B55AF8000384F35 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		0F4BA6761B62B871006C6A51 /* Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pause.swift; sourceTree = "<group>"; };
 		0F55D8FC1B70278600975632 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		0F56A7EB1B788515004324C1 /* Pods_JetRush_iOS.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Pods_JetRush_iOS.framework.dSYM; path = "../../../../Library/Developer/Xcode/DerivedData/JetRush-alnthbwawnkxylgqtqifqvilbqum/Build/Intermediates/ArchiveIntermediates/JetRush/BuildProductsPath/Release-iphoneos/Pods_JetRush_iOS.framework.dSYM"; sourceTree = "<group>"; };
 		0F6C03811B7937DE0075A38F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		0F6C03831B7952FF0075A38F /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chartboost.framework; path = ../../../../Downloads/Chartboost/Chartboost.framework; sourceTree = "<group>"; };
+		0F6C03851B7953270075A38F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0F89B5BA1B72747B0023FD53 /* Battle_-_War_and_Conquest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Battle_-_War_and_Conquest.m4a"; path = "Source/Resources/Published-iOS/Battle_-_War_and_Conquest.m4a"; sourceTree = "<group>"; };
 		0F91B1221B6A909700910569 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		0F91B1261B6A96C700910569 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
@@ -284,6 +288,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */,
+				0F6C03861B7953270075A38F /* StoreKit.framework in Frameworks */,
+				0F6C03841B7952FF0075A38F /* Chartboost.framework in Frameworks */,
 				0F4BA6731B62AE79006C6A51 /* CoreAudio.framework in Frameworks */,
 				0FBE0A571B616F5600189001 /* CoreMotion.framework in Frameworks */,
 				7A97911819E631CD001FFC4D /* libcocos2d.a in Frameworks */,
@@ -294,7 +301,6 @@
 				B77F1B3817B978D7009739AE /* AudioToolbox.framework in Frameworks */,
 				B77F1B3A17B978D7009739AE /* AVFoundation.framework in Frameworks */,
 				B77F1B3C17B978D7009739AE /* UIKit.framework in Frameworks */,
-				B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */,
 				B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */,
 				B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */,
 				425360EB8996BFF782624FB5 /* Pods_JetFall_iOS.framework in Frameworks */,
@@ -542,6 +548,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F6C03851B7953270075A38F /* StoreKit.framework */,
 				0F56A7EB1B788515004324C1 /* Pods_JetRush_iOS.framework.dSYM */,
 				0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */,
 				0FBE0A561B616F5600189001 /* CoreMotion.framework */,
@@ -552,6 +559,7 @@
 				BC5399D71A44DCC90063F482 /* JavaKit.framework */,
 				7BF6AF9F1A425F9800FFF9BA /* JavaFoundation.framework */,
 				7A59493C19E37FB200F65F90 /* libz.dylib */,
+				0F6C03831B7952FF0075A38F /* Chartboost.framework */,
 				7A59493A19E37F9300F65F90 /* OpenGL.framework */,
 				7A4036F419DE3FA8007B6E8F /* AppKit.framework */,
 				5B12100919748273004C1E1D /* libEGL.so */,
@@ -1220,6 +1228,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/RShafi/Downloads/Chartboost,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
@@ -1260,6 +1272,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/RShafi/Downloads/Chartboost,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
 				HEADER_SEARCH_PATHS = (

@@ -10,7 +10,7 @@
 #define JetFall_Mixpanel_Briding_Header_h
 
 #import "Mixpanel/Mixpanel.h"
-
+#import <Chartboost/Chartboost.h>
 #import "cocos2d.h"
 #import "cocos2d-ui.h"
 
