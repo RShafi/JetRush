@@ -181,7 +181,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             if let accelerometerData: CMAccelerometerData = motion.accelerometerData {
                 let acceleration: CMAcceleration = accelerometerData.acceleration
                 let accelFloat: CGFloat = CGFloat(acceleration.x)
-                var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 400.0 * CGFloat(delta)
+                var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 1200.0 * CGFloat(delta)
                 character.physicsBody.velocity.x = newXPos
                 
             }
