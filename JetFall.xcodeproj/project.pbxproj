@@ -14,6 +14,7 @@
 		0F4BA6731B62AE79006C6A51 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4BA6721B62AE79006C6A51 /* CoreAudio.framework */; };
 		0F4BA6771B62B871006C6A51 /* Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BA6761B62B871006C6A51 /* Pause.swift */; };
 		0F55D8FD1B70278600975632 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55D8FC1B70278600975632 /* Monster.swift */; };
+		0F6C03821B7937DE0075A38F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F6C03811B7937DE0075A38F /* Settings.bundle */; };
 		0F91B1231B6A909700910569 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1221B6A909700910569 /* Goal.swift */; };
 		0F91B1271B6A96C700910569 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1261B6A96C700910569 /* About.swift */; };
 		0FBE0A571B616F5600189001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBE0A561B616F5600189001 /* CoreMotion.framework */; };
@@ -166,6 +167,7 @@
 		0F4BA6761B62B871006C6A51 /* Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pause.swift; sourceTree = "<group>"; };
 		0F55D8FC1B70278600975632 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		0F56A7EB1B788515004324C1 /* Pods_JetRush_iOS.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Pods_JetRush_iOS.framework.dSYM; path = "../../../../Library/Developer/Xcode/DerivedData/JetRush-alnthbwawnkxylgqtqifqvilbqum/Build/Intermediates/ArchiveIntermediates/JetRush/BuildProductsPath/Release-iphoneos/Pods_JetRush_iOS.framework.dSYM"; sourceTree = "<group>"; };
+		0F6C03811B7937DE0075A38F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		0F89B5BA1B72747B0023FD53 /* Battle_-_War_and_Conquest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Battle_-_War_and_Conquest.m4a"; path = "Source/Resources/Published-iOS/Battle_-_War_and_Conquest.m4a"; sourceTree = "<group>"; };
 		0F91B1221B6A909700910569 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		0F91B1261B6A96C700910569 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
@@ -476,6 +478,7 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				0F153B681B55AA4B00384F35 /* Character.swift */,
+				0F6C03811B7937DE0075A38F /* Settings.bundle */,
 				0F153B6E1B55AA6300384F35 /* Gameplay.swift */,
 				0FB55E0F1B75599B00D2AB46 /* Mixpanel-Briding-Header.h */,
 				0F91B1221B6A909700910569 /* Goal.swift */,
@@ -784,6 +787,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
+				0F6C03821B7937DE0075A38F /* Settings.bundle in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
