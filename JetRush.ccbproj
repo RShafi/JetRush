@@ -78,64 +78,55 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
-		<key>About Filled-100.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>2</integer>
-		</dict>
 		<key>Battle_-_War_and_Conquest.wav</key>
 		<dict>
 			<key>format_ios_sound</key>
 			<integer>1</integer>
 		</dict>
-		<key>Exit-100.png</key>
+		<key>Icons/About Filled-100.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
-		<key>Play Filled-100 (1).png</key>
+		<key>Icons/Exit-100.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
-		<key>Restart-100.png</key>
+		<key>Icons/Play Filled-100 (1).png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
-		<key>Sci-Fi Battlers</key>
+		<key>Icons/Restart-100.png</key>
 		<dict>
-			<key>isSmartSpriteSheet</key>
-			<true/>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Icons/Settings Filled-100 (1).png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Icons/Share-100 (1).png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Icons/Thumb Up Filled-100.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
+		</dict>
+		<key>Icons/Thumbs Down Filled-100.png</key>
+		<dict>
+			<key>scaleFrom</key>
+			<integer>2</integer>
 		</dict>
 		<key>Sci-Fi Tiles Pack</key>
 		<dict/>
-		<key>Sci-Fi VN Kit</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>previewFolderHidden</key>
-			<false/>
-		</dict>
-		<key>Settings Filled-100 (1).png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>2</integer>
-		</dict>
-		<key>Shoot Em Up Enemy Sprite Pack</key>
-		<dict/>
 		<key>Sprites</key>
 		<dict/>
-		<key>Thumb Up Filled-100.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>2</integer>
-		</dict>
-		<key>Thumbs Down Filled-100.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>2</integer>
-		</dict>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
@@ -218,10 +209,6 @@
 			<key>tabletScale</key>
 			<integer>1</integer>
 		</dict>
-		<key>floors-highres</key>
-		<dict/>
-		<key>walls-highres</key>
-		<dict/>
 	</dict>
 	<key>versionStr</key>
 	<string>revision : eea568a5c7

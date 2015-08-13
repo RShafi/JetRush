@@ -112,7 +112,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Sci-Fi VN Kit/SciFi_VN_Background_Element_8.png</string>
+							<string>Background Assets/SciFi_VN_Background_Element_8.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -220,7 +220,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>floors-highres/ship_planetdestruction.png</string>
+							<string>Background Assets/ship_planetdestruction.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -328,7 +328,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>walls-highres/ship-future.png</string>
+							<string>Background Assets/ship-future.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -445,7 +445,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -652,7 +652,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1502,7 +1502,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Play Filled-100 (1).png</string>
+							<string>Icons/Play Filled-100 (1).png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1610,7 +1610,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>About Filled-100.png</string>
+							<string>Icons/About Filled-100.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1646,8 +1646,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1720,7 +1718,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Settings Filled-100 (1).png</string>
+							<string>Icons/Settings Filled-100 (1).png</string>
 						</array>
 					</dict>
 					<dict>

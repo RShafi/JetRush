@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Thumb Up Filled-100.png</string>
+							<string>Icons/Thumb Up Filled-100.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -218,7 +218,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Thumb Up Filled-100.png</string>
+							<string>Icons/Thumb Up Filled-100.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -326,7 +326,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Thumbs Down Filled-100.png</string>
+							<string>Icons/Thumbs Down Filled-100.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -434,7 +434,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Thumbs Down Filled-100.png</string>
+							<string>Icons/Thumbs Down Filled-100.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -551,7 +551,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -758,7 +758,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1617,7 +1617,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2793,7 +2793,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Exit-100.png</string>
+							<string>Icons/Exit-100.png</string>
 						</array>
 					</dict>
 					<dict>

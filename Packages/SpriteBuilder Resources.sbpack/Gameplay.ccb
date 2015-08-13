@@ -117,7 +117,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>floors-highres/alienship2.png</string>
+									<string>Background Assets/alienship2.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -225,7 +225,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>walls-highres/alienship-wall2.png</string>
+									<string>Background Assets/alienship-wall2.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1901,7 +1901,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2116,7 +2116,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2323,7 +2323,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -2577,7 +2577,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Pause-512.png</string>
+							<string>Icons/Pause-512.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -3028,7 +3028,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>iPhone Filled-100 (1).png</string>
+							<string>Icons/iPhone Filled-100 (1).png</string>
 						</array>
 					</dict>
 					<dict>
@@ -3319,7 +3319,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>iPhone Filled-100 (1).png</string>
+							<string>Icons/iPhone Filled-100 (1).png</string>
 						</array>
 					</dict>
 					<dict>
@@ -3444,7 +3444,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -3659,7 +3659,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -3865,7 +3865,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Exit-100.png</string>
+							<string>Icons/Exit-100.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -3981,7 +3981,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Restart-100.png</string>
+							<string>Icons/Restart-100.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -4489,7 +4489,7 @@ Obstacles</string>
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -4776,7 +4776,7 @@ Obstacles</string>
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -4902,6 +4902,8 @@ Obstacles</string>
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -5228,8 +5230,6 @@ Obstacles</string>
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -5310,7 +5310,7 @@ Obstacles</string>
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Share Filled-100.png</string>
+							<string>Icons/Share-100 (1).png</string>
 						</array>
 					</dict>
 					<dict>

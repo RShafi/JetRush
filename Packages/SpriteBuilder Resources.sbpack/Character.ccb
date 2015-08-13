@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -251,7 +251,7 @@
 			<dict>
 				<key>baseValue</key>
 				<array>
-					<string>Sci-Fi Battlers/scifibattlers_tekbot.png</string>
+					<string>Sprite Assets/scifibattlers_tekbot.png</string>
 					<string>Use regular file</string>
 				</array>
 				<key>name</key>
@@ -261,7 +261,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Sci-Fi Battlers/scifibattlers_tekflyer.png</string>
+					<string>Sprite Assets/scifibattlers_tekbot.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -297,6 +297,8 @@
 				<array/>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 		<key>seqExpanded</key>
 		<true/>
 	</dict>

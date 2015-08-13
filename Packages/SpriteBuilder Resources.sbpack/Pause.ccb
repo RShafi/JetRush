@@ -110,7 +110,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>floors-highres/alienship.png</string>
+							<string>Background Assets/alienship.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -218,7 +218,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>walls-highres/alienship-wall1.png</string>
+							<string>Background Assets/alienship-wall1.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -335,7 +335,7 @@
 						<key>type</key>
 						<string>FontTTF</string>
 						<key>value</key>
-						<string>Sci-Fi VN Kit/hemi head bd it.ttf</string>
+						<string>Sprite Assets/hemi head bd it.ttf</string>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -1113,8 +1113,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1187,7 +1185,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Play Filled-100 (1).png</string>
+							<string>Icons/Play Filled-100 (1).png</string>
 						</array>
 					</dict>
 					<dict>
@@ -1295,7 +1293,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>Exit-100.png</string>
+							<string>Icons/Exit-100.png</string>
 						</array>
 					</dict>
 					<dict>
