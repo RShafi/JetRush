@@ -24,6 +24,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var pauseButton: CCButton!
     weak var quitButton2: CCButton!
     weak var gamePhysicsNode : CCPhysicsNode!
+    weak var shareButton: CCButton!
     weak var ground: CCSprite!
     weak var gameOver1: CCLabelTTF!
     weak var gameOver2: CCLabelTTF!
@@ -49,6 +50,12 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     weak var obstaclesLayer : CCNode!
     weak var followNode: CCNode!
     var mixpanel = Mixpanel.sharedInstance()
+   var music: Bool = NSUserDefaults.standardUserDefaults().boolForKey("gameMusic") ?? true {
+      didSet {
+         NSUserDefaults.standardUserDefaults().setBool(music, forKey:"gameMusic")
+         NSUserDefaults.standardUserDefaults().synchronize()
+      }
+   }
     var scrollSpeed : CGFloat = 60
     var sinceTouch: CCTime = 0
     var gameOver = false
@@ -83,7 +90,46 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
 //            gameOver2.string = "\(gameOverScore)"
 //        }
 //    }
-    
+   
+   func shareButtonTapped() {
+      var scene = CCDirector.sharedDirector().runningScene
+      var node: AnyObject = scene.children[0]
+      var screenshot = screenShotWithStartNode(node as! CCNode)
+      
+      let sharedText = "Hey! Think you can beat my high score in Jet Fall? Download it here: [This is where I put a link to download my awesome game]"
+      let itemsToShare = [screenshot, sharedText]
+      
+      var excludedActivities = [ UIActivityTypeAssignToContact,
+         UIActivityTypeAddToReadingList, UIActivityTypePostToTencentWeibo]
+      
+      var controller = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
+      if controller.respondsToSelector(Selector("popoverPresentationController")) {
+         controller.popoverPresentationController?.sourceView = UIApplication.sharedApplication().keyWindow?.rootViewController?.view
+      }
+      controller.excludedActivityTypes = excludedActivities
+      UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(controller, animated: true, completion: nil)
+      
+   }
+   
+   func screenShotWithStartNode(node: CCNode) -> UIImage {
+      CCDirector.sharedDirector().nextDeltaTimeZero = true
+      var viewSize = CCDirector.sharedDirector().viewSize()
+      var rtx = CCRenderTexture(width: Int32(viewSize.width), height: Int32(viewSize.height))
+      rtx.begin()
+      node.visit()
+      rtx.end()
+      return rtx.getUIImage()
+   }
+   
+   func enterGame() {
+      if music == true {
+         let audio = OALSimpleAudio.sharedInstance().preloadBg("Battle - Armies Advance.mp3")
+         OALSimpleAudio.sharedInstance().playBgWithLoop(audio)
+      }
+      if music == false {
+         OALSimpleAudio.sharedInstance().stopBg()
+      }
+   }
 
     
     func didLoadFromCCB() {
@@ -150,33 +196,33 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
     
     
     
-    override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
-        var xTouch = touch.locationInWorld().x
-        var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
-        if gameOver == false {
-            if xTouch < screenHalf {
-                left()
-            }
-            else {
-                right()
-            }
-        }
-    }
-    func tap() {
-        self.animationManager.runAnimationsForSequenceNamed("Tap")
-    }
-    
-    
-    
-    func right() {
-        character.physicsBody.applyImpulse(ccp(100, 0))
-
-    }
-
-    func left() {
-        character.physicsBody.applyImpulse(ccp(-100, 0))
-    }
-  
+//    override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
+//        var xTouch = touch.locationInWorld().x
+//        var screenHalf = CCDirector.sharedDirector().viewSize().width / 2
+//        if gameOver == false {
+//            if xTouch < screenHalf {
+//                left()
+//            }
+//            else {
+//                right()
+//            }
+//        }
+//    }
+//    func tap() {
+//        self.animationManager.runAnimationsForSequenceNamed("Tap")
+//    }
+//    
+//    
+//    
+//    func right() {
+//        character.physicsBody.applyImpulse(ccp(100, 0))
+//
+//    }
+//
+//    func left() {
+//        character.physicsBody.applyImpulse(ccp(-100, 0))
+//    }
+//  
     override func update(delta: CCTime) {
         
         let velocityX = clampf(Float(character.physicsBody.velocity.x), -100, 100)
@@ -187,7 +233,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             if let accelerometerData: CMAccelerometerData = motion.accelerometerData {
                 let acceleration: CMAcceleration = accelerometerData.acceleration
                 let accelFloat: CGFloat = CGFloat(acceleration.x)
-                var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 400.0 * CGFloat(delta)
+                var newXPos: CGFloat = character.physicsBody.velocity.x + accelFloat * 3000.0 * CGFloat(delta)
                 character.physicsBody.velocity.x = newXPos
                 
             }
@@ -264,7 +310,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
              if worldPosition.y < 120.0 {
                 println("Obstacle reset")
                 obstacle.position = ccp(obstacle.position.x, obstacle.position.y + 600)
-                scrollSpeed = scrollSpeed++
+                scrollSpeed = scrollSpeed + 1.5
                 score++
             }
            
@@ -291,6 +337,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
             highscoreLabel.visible = true
             scoreLabel.visible = false
             pauseButton.visible = false
+            shareButton.visible = true
             character.physicsBody.velocity.x = 0
             scrollSpeed = 0
             let move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.2, position: ccp(0, 4)))
@@ -312,7 +359,7 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
         mixpanel.track("Game Over", properties: ["Score" : score])
 //        mixpanel.track("Game Over", properties: ["Time Played" : ])
       
-      if adCounter == 3 {
+      if adCounter == 5 {
          Chartboost.showInterstitial(CBLocationLevelComplete)
          adCounter = 0
       }
@@ -361,10 +408,10 @@ class Gameplay: CCNode, CCPhysicsCollisionDelegate {
 //        }
 //      // create and add a new obstacle
 //        let blockage = CCBReader.load("Obstacle") as! Obstacle
-//       blockage.position = ccp(100, prevObstaclePos + distanceBetweenObstacles)
+//       blockage.position = ccp(prevObstaclePos + distanceBetweenObstacles, 100)
 //        blockage.setupRandomPosition()
 //       obstaclesLayer.addChild(blockage)
 //       obstacles.append(blockage)
 //   }
-//    
+   
 }

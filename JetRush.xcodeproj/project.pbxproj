@@ -17,6 +17,7 @@
 		0F6C03821B7937DE0075A38F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F6C03811B7937DE0075A38F /* Settings.bundle */; };
 		0F6C03841B7952FF0075A38F /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6C03831B7952FF0075A38F /* Chartboost.framework */; };
 		0F6C03861B7953270075A38F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6C03851B7953270075A38F /* StoreKit.framework */; };
+		0F73BB181B7A6DC800ABEA6F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73BB171B7A6DC800ABEA6F /* Settings.swift */; };
 		0F91B1231B6A909700910569 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1221B6A909700910569 /* Goal.swift */; };
 		0F91B1271B6A96C700910569 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F91B1261B6A96C700910569 /* About.swift */; };
 		0FBE0A571B616F5600189001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBE0A561B616F5600189001 /* CoreMotion.framework */; };
@@ -172,6 +173,7 @@
 		0F6C03811B7937DE0075A38F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		0F6C03831B7952FF0075A38F /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chartboost.framework; path = ../../../../Downloads/Chartboost/Chartboost.framework; sourceTree = "<group>"; };
 		0F6C03851B7953270075A38F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0F73BB171B7A6DC800ABEA6F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0F89B5BA1B72747B0023FD53 /* Battle_-_War_and_Conquest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Battle_-_War_and_Conquest.m4a"; path = "Source/Resources/Published-iOS/Battle_-_War_and_Conquest.m4a"; sourceTree = "<group>"; };
 		0F91B1221B6A909700910569 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		0F91B1261B6A96C700910569 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
@@ -191,7 +193,7 @@
 		5B121033197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Android/Info.plist; sourceTree = "<group>"; };
 		5B121034197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/iOS/Info.plist; sourceTree = "<group>"; };
 		5BA4619E1974C88900785744 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AndroidManifest.xml; path = Platforms/Android/AndroidManifest.xml; sourceTree = "<group>"; };
-		7A4035FF19DDEE84007B6E8F /* JetFall Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JetFall Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4035FF19DDEE84007B6E8F /* JetRush Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JetRush Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A40360219DDEE84007B6E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Mac/Info.plist; sourceTree = "<group>"; };
 		7A40360319DDEE84007B6E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/Mac/main.m; sourceTree = "<group>"; };
 		7A40360519DDEE84007B6E8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/Platforms/Mac/AppDelegate.h; sourceTree = "<group>"; };
@@ -205,7 +207,7 @@
 		7BF6AF9F1A425F9800FFF9BA /* JavaFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFoundation.framework; path = "../../../../../../../Library/SBAndroid/Application Support/Developer/Shared/Xcode/Platforms/Android.platform/Developer/SDKs/SBAndroid.sdk/System/Library/Frameworks/JavaFoundation.framework"; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		8908057DA85BDA739982CBF0 /* Pods-JetFall iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetFall iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JetFall iOS/Pods-JetFall iOS.release.xcconfig"; sourceTree = "<group>"; };
-		927F61BF196C771E000F43EF /* JetFall Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JetFall Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		927F61BF196C771E000F43EF /* JetRush Android.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JetRush Android.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -226,7 +228,7 @@
 		B737896E180762440076A88C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Source/Resources/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		B73789851807631A0076A88C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/iOS/main.m; sourceTree = SOURCE_ROOT; };
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		B77F1B2E17B978D7009739AE /* JetFall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JetFall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77F1B2E17B978D7009739AE /* JetRush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JetRush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B77F1B3517B978D7009739AE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -486,6 +488,7 @@
 				0F153B681B55AA4B00384F35 /* Character.swift */,
 				0F6C03811B7937DE0075A38F /* Settings.bundle */,
 				0F153B6E1B55AA6300384F35 /* Gameplay.swift */,
+				0F73BB171B7A6DC800ABEA6F /* Settings.swift */,
 				0FB55E0F1B75599B00D2AB46 /* Mixpanel-Briding-Header.h */,
 				0F91B1221B6A909700910569 /* Goal.swift */,
 				0F4BA6761B62B871006C6A51 /* Pause.swift */,
@@ -538,9 +541,9 @@
 		B77F1B2F17B978D7009739AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B77F1B2E17B978D7009739AE /* JetFall.app */,
-				927F61BF196C771E000F43EF /* JetFall Android.app */,
-				7A4035FF19DDEE84007B6E8F /* JetFall Mac.app */,
+				B77F1B2E17B978D7009739AE /* JetRush.app */,
+				927F61BF196C771E000F43EF /* JetRush Android.app */,
+				7A4035FF19DDEE84007B6E8F /* JetRush Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -606,9 +609,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7A4035FE19DDEE84007B6E8F /* JetFall Mac */ = {
+		7A4035FE19DDEE84007B6E8F /* JetRush Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "JetFall Mac" */;
+			buildConfigurationList = 7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "JetRush Mac" */;
 			buildPhases = (
 				7A4035FB19DDEE84007B6E8F /* Sources */,
 				7A4035FC19DDEE84007B6E8F /* Frameworks */,
@@ -619,14 +622,14 @@
 			dependencies = (
 				7A97911619E631A1001FFC4D /* PBXTargetDependency */,
 			);
-			name = "JetFall Mac";
+			name = "JetRush Mac";
 			productName = "JetRush Mac";
-			productReference = 7A4035FF19DDEE84007B6E8F /* JetFall Mac.app */;
+			productReference = 7A4035FF19DDEE84007B6E8F /* JetRush Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		927F6198196C771E000F43EF /* JetFall Android */ = {
+		927F6198196C771E000F43EF /* JetRush Android */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "JetFall Android" */;
+			buildConfigurationList = 927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "JetRush Android" */;
 			buildPhases = (
 				927F619B196C771E000F43EF /* Run Script */,
 				927F619C196C771E000F43EF /* Sources */,
@@ -638,14 +641,14 @@
 			dependencies = (
 				7A97912219E6321C001FFC4D /* PBXTargetDependency */,
 			);
-			name = "JetFall Android";
+			name = "JetRush Android";
 			productName = Example;
-			productReference = 927F61BF196C771E000F43EF /* JetFall Android.app */;
+			productReference = 927F61BF196C771E000F43EF /* JetRush Android.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B77F1B2D17B978D7009739AE /* JetFall iOS */ = {
+		B77F1B2D17B978D7009739AE /* JetRush iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "JetFall iOS" */;
+			buildConfigurationList = B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "JetRush iOS" */;
 			buildPhases = (
 				0CC038A6F2D19B65DD994734 /* Check Pods Manifest.lock */,
 				D2E0167A18D782EC00927430 /* Run Script */,
@@ -661,9 +664,9 @@
 			dependencies = (
 				7A97911019E6319A001FFC4D /* PBXTargetDependency */,
 			);
-			name = "JetFall iOS";
+			name = "JetRush iOS";
 			productName = Example;
-			productReference = B77F1B2E17B978D7009739AE /* JetFall.app */;
+			productReference = B77F1B2E17B978D7009739AE /* JetRush.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -688,7 +691,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "JetFall" */;
+			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "JetRush" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -707,9 +710,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				B77F1B2D17B978D7009739AE /* JetFall iOS */,
-				927F6198196C771E000F43EF /* JetFall Android */,
-				7A4035FE19DDEE84007B6E8F /* JetFall Mac */,
+				B77F1B2D17B978D7009739AE /* JetRush iOS */,
+				927F6198196C771E000F43EF /* JetRush Android */,
+				7A4035FE19DDEE84007B6E8F /* JetRush Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -939,6 +942,7 @@
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				0F153B771B55AF8000384F35 /* MainScene.swift in Sources */,
 				0F91B1231B6A909700910569 /* Goal.swift in Sources */,
+				0F73BB181B7A6DC800ABEA6F /* Settings.swift in Sources */,
 				0F153B691B55AA4B00384F35 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1004,7 +1008,7 @@
 					"-lz",
 				);
 				PRODUCT_MODULE_NAME = JetRush;
-				PRODUCT_NAME = "JetFall Mac";
+				PRODUCT_NAME = "JetRush Mac";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1048,7 +1052,7 @@
 					"-lz",
 				);
 				PRODUCT_MODULE_NAME = JetRush;
-				PRODUCT_NAME = "JetFall Mac";
+				PRODUCT_NAME = "JetRush Mac";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 			};
@@ -1096,7 +1100,7 @@
 					"-landroid",
 				);
 				PRODUCT_MODULE_NAME = JetRush;
-				PRODUCT_NAME = "JetFall Android";
+				PRODUCT_NAME = "JetRush Android";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = sbandroid;
 				WRAPPER_EXTENSION = app;
@@ -1144,7 +1148,7 @@
 					"-landroid",
 				);
 				PRODUCT_MODULE_NAME = JetRush;
-				PRODUCT_NAME = "JetFall Android";
+				PRODUCT_NAME = "JetRush Android";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = sbandroid;
 				VALIDATE_PRODUCT = YES;
@@ -1252,7 +1256,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_NAME = JetFall;
+				PRODUCT_NAME = JetRush;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/RShafi/Desktop/Assignments/Swift/JetRush.spritebuilder/Mixpanel-Briding-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1294,7 +1298,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_NAME = JetFall;
+				PRODUCT_NAME = JetRush;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/RShafi/Desktop/Assignments/Swift/JetRush.spritebuilder/Mixpanel-Briding-Header.h";
 				VALIDATE_PRODUCT = YES;
@@ -1305,7 +1309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "JetFall Mac" */ = {
+		7A40361E19DDEE84007B6E8F /* Build configuration list for PBXNativeTarget "JetRush Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A40361919DDEE84007B6E8F /* Debug */,
@@ -1314,7 +1318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "JetFall Android" */ = {
+		927F61BC196C771E000F43EF /* Build configuration list for PBXNativeTarget "JetRush Android" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				927F61BD196C771E000F43EF /* Debug */,
@@ -1323,7 +1327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "JetFall" */ = {
+		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "JetRush" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDC17B978D8009739AE /* Debug */,
@@ -1332,7 +1336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "JetFall iOS" */ = {
+		B77F1CDE17B978D8009739AE /* Build configuration list for PBXNativeTarget "JetRush iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDF17B978D8009739AE /* Debug */,

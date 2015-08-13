@@ -1,26 +1,33 @@
 //
 //  Settings.swift
-//  JetRush
+//  JetFall
 //
-//  Created by Ramsey Shafi on 8/4/15.
+//  Created by Ramsey Shafi on 8/11/15.
 //  Copyright (c) 2015 Apportable. All rights reserved.
 //
 
 import UIKit
 
 class Settings: CCNode {
+    
+    func soundOn() {
+        Gameplay().music = true
+        MainScene().music = true
+    }
    
-    func tutOn() {}
-    
-    func tutOff() {}
-    
-    func soundOn() {}
-    
-    func soundOff() {}
+    func soundOff() {
+        Gameplay().music = false
+        MainScene().music = false
+        OALSimpleAudio.sharedInstance().stopBg()
+    }
     
     func back() {
-        var scene = CCBReader.loadAsScene("MainScene")
-        CCDirector.sharedDirector().presentScene(scene)
+        let quitScene = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().presentScene(quitScene, withTransition: CCTransition(fadeWithDuration: 0.3))
+    }
+   
+    func tutOn() {
+    }
+    func tutOff() {
     }
 }
- 

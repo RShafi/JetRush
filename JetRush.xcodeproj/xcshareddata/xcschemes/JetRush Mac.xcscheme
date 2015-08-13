@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
-               BuildableName = "JetFall Mac.app"
-               BlueprintName = "JetFall Mac"
-               ReferencedContainer = "container:JetFall.xcodeproj">
+               BuildableName = "JetRush Mac.app"
+               BlueprintName = "JetRush Mac"
+               ReferencedContainer = "container:JetRush.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
-            BuildableName = "JetFall Mac.app"
-            BlueprintName = "JetFall Mac"
-            ReferencedContainer = "container:JetFall.xcodeproj">
+            BuildableName = "JetRush Mac.app"
+            BlueprintName = "JetRush Mac"
+            ReferencedContainer = "container:JetRush.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
-            BuildableName = "JetFall Mac.app"
-            BlueprintName = "JetFall Mac"
-            ReferencedContainer = "container:JetFall.xcodeproj">
+            BuildableName = "JetRush Mac.app"
+            BlueprintName = "JetRush Mac"
+            ReferencedContainer = "container:JetRush.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7A4035FE19DDEE84007B6E8F"
-            BuildableName = "JetFall Mac.app"
-            BlueprintName = "JetFall Mac"
-            ReferencedContainer = "container:JetFall.xcodeproj">
+            BuildableName = "JetRush Mac.app"
+            BlueprintName = "JetRush Mac"
+            ReferencedContainer = "container:JetRush.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

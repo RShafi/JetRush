@@ -15,6 +15,21 @@ class MainScene: CCNode {
     weak var settingsButton: CCButton!
     weak var playButton: CCButton!
     var mixpanel = Mixpanel.sharedInstance()
+    var music: Bool = NSUserDefaults.standardUserDefaults().boolForKey("gameMusic") ?? true {
+        didSet {
+            NSUserDefaults.standardUserDefaults().setBool(music, forKey:"gameMusic")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+    
+    override func onEnter() {
+        if music == true {
+            playMusic()
+        }
+        if music == false {
+            stopMusic()
+        }
+    }
     
     func play() {
         playButton.visible = false

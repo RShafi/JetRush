@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "927F6198196C771E000F43EF"
-               BuildableName = "JetFall Android.app"
-               BlueprintName = "JetFall Android"
-               ReferencedContainer = "container:JetFall.xcodeproj">
+               BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
+               BuildableName = "JetRush.app"
+               BlueprintName = "JetRush iOS"
+               ReferencedContainer = "container:JetRush.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "927F6198196C771E000F43EF"
-            BuildableName = "JetFall Android.app"
-            BlueprintName = "JetFall Android"
-            ReferencedContainer = "container:JetFall.xcodeproj">
+            BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
+            BuildableName = "JetRush.app"
+            BlueprintName = "JetRush iOS"
+            ReferencedContainer = "container:JetRush.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,10 +52,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "927F6198196C771E000F43EF"
-            BuildableName = "JetFall Android.app"
-            BlueprintName = "JetFall Android"
-            ReferencedContainer = "container:JetFall.xcodeproj">
+            BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
+            BuildableName = "JetRush.app"
+            BlueprintName = "JetRush iOS"
+            ReferencedContainer = "container:JetRush.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "927F6198196C771E000F43EF"
-            BuildableName = "JetFall Android.app"
-            BlueprintName = "JetFall Android"
-            ReferencedContainer = "container:JetFall.xcodeproj">
+            BlueprintIdentifier = "B77F1B2D17B978D7009739AE"
+            BuildableName = "JetRush.app"
+            BlueprintName = "JetRush iOS"
+            ReferencedContainer = "container:JetRush.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

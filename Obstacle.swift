@@ -20,7 +20,7 @@ class Obstacle: CCNode {
         let randomPrecision : UInt32 = 100
         let random = CGFloat(arc4random_uniform(randomPrecision)) / CGFloat(randomPrecision)
         let range = obstacleMaximumPositionx - obstacleDistance - obstacleMinimumPositionX
-        obstacle.position = ccp(obstacle.position.x, obstacleMinimumPositionX + (random * range))
+        obstacle.position = ccp(obstacleMinimumPositionX + (random * range), obstacle.position.y)
     }
     
     func didLoadFromCCB() {
